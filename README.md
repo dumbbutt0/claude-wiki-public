@@ -1,7 +1,7 @@
 # Claude-Wiki — public methodology
 
 The shareable **system-logic** subset of a personal LLM-wiki (Karpathy's pattern), maintained by Claude Code.
-**Only `privacy_scope: public_system` pages are here** — 36 methodology nodes on agent loops, conversion
+**Only `privacy_scope: public_system` pages are here** — 37 methodology nodes on agent loops, conversion
 learning, evaluation discipline, and the wiki's own architecture. The owner's sources, project internals, and
 the *edge* never leave their machine — *"publish the ideas, not the edge."*
 
@@ -18,6 +18,7 @@ stripped to plain text on export.
 - [Conversion Learning](03_wiki/concepts/conversion-learning.md)
 - [Corrected-Reference Lens](03_wiki/concepts/corrected-reference-lens.md)
 - [Decentralized AI Training Platform (exploratory)](05_blueprints/decentralized-ai-training.md)
+- [Deep glossary — web-researched across fields](03_wiki/decisions/deep-glossary.md)
 - [Deep-Mine a Conversation](03_wiki/skills/deep-mine-conversation.md)
 - [Determinism at the Authority Boundary](03_wiki/concepts/determinism-at-the-authority-boundary.md)
 - [Durability — encrypted backup + clean public export](03_wiki/decisions/durability-and-public-export.md)
