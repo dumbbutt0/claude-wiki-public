@@ -1,0 +1,47 @@
+{
+  "$schema": "internal://claude-wiki/graph-manifest",
+  "version": 1,
+  "description": "Node-type -> visual mapping and ring/mode semantics that the eye-graph visualizer reads. graph-export.json carries the actual nodes/edges.",
+  "nodeTypes": {
+    "source-summary": { "color": "#8a8f98", "shape": "square", "label": "Source" },
+    "source-map":     { "color": "#6b7280", "shape": "square", "label": "Source map" },
+    "concept":        { "color": "#4f9dde", "shape": "circle", "label": "Concept" },
+    "entity":         { "color": "#7bb0e0", "shape": "circle", "label": "Entity" },
+    "project":        { "color": "#e0a458", "shape": "hexagon", "label": "Project" },
+    "system":         { "color": "#d98a4f", "shape": "hexagon", "label": "System" },
+    "skill":          { "color": "#5fc48f", "shape": "diamond", "label": "Skill" },
+    "pattern":        { "color": "#b07fd9", "shape": "triangle", "label": "Pattern" },
+    "decision":       { "color": "#d96d6d", "shape": "triangle", "label": "Decision" },
+    "contradiction":  { "color": "#c0392b", "shape": "triangle", "label": "Contradiction" },
+    "question":       { "color": "#f0c419", "shape": "circle", "label": "Question" },
+    "synthesis":      { "color": "#9b59b6", "shape": "star", "label": "Synthesis" },
+    "blueprint":      { "color": "#2ecc71", "shape": "star", "label": "Blueprint" },
+    "capability":     { "color": "#2ec4b6", "shape": "hexagon", "label": "Capability" },
+    "outcome":        { "color": "#e07a5f", "shape": "diamond", "label": "Outcome" },
+    "pipeline":       { "color": "#7e9cff", "shape": "hexagon", "label": "Pipeline" },
+    "stage":          { "color": "#5fd0c5", "shape": "square", "label": "Stage" },
+    "interface":      { "color": "#c9a227", "shape": "triangle", "label": "Interface" },
+    "gap":            { "color": "#ff4d4d", "shape": "diamond", "label": "Gap (missing)" },
+    "reasoning-session": { "color": "#b48ead", "shape": "star", "label": "Reasoning session" },
+    "template":       { "color": "#bbbbbb", "shape": "square", "label": "Template" }
+  },
+  "irisRings": {
+    "pupil":  { "order": 0, "radius": 0.0,  "meaning": "the active answer being formed" },
+    "inner":  { "order": 1, "radius": 0.33, "meaning": "most relevant concepts/projects/claims/sources" },
+    "middle": { "order": 2, "radius": 0.66, "meaning": "related skills, decisions, patterns, adjacent systems" },
+    "outer":  { "order": 3, "radius": 1.0,  "meaning": "weakly related, future, unresolved, archived" }
+  },
+  "modes": {
+    "audit":          { "color": "#d96d6d", "label": "Audit mode" },
+    "minecraft":      { "color": "#5fc48f", "label": "Minecraft mode" },
+    "ai-engineering": { "color": "#4f9dde", "label": "AI engineering mode" },
+    "content":        { "color": "#e0a458", "label": "Content mode" },
+    "life-strategy":  { "color": "#9b59b6", "label": "Life strategy mode" },
+    "meta":           { "color": "#8a8f98", "label": "Meta (about the wiki)" }
+  },
+  "edgeTypes": {
+    "wikilink":  { "directed": true,  "weight": 1.0, "meaning": "[[link]] between pages" },
+    "source":    { "directed": true,  "weight": 0.7, "meaning": "page derives from a source" },
+    "related":   { "directed": false, "weight": 0.5, "meaning": "frontmatter related:" }
+  }
+}
