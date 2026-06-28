@@ -1,7 +1,7 @@
 # Claude-Wiki — public methodology
 
 The shareable **system-logic** subset of a personal LLM-wiki (Karpathy's pattern), maintained by Claude Code.
-**Only `privacy_scope: public_system` pages are here** — 37 methodology nodes on agent loops, conversion
+**Only `privacy_scope: public_system` pages are here** — 40 methodology nodes on agent loops, conversion
 learning, evaluation discipline, and the wiki's own architecture. The owner's sources, project internals, and
 the *edge* never leave their machine — *"publish the ideas, not the edge."*
 
@@ -11,9 +11,12 @@ stripped to plain text on export.
 ## Contents
 - [Adversarial Reasoning as Constraint-Solving](03_wiki/concepts/adversarial-reasoning.md)
 - [Agent Loop (the loop, not the prompt)](03_wiki/concepts/agent-loop.md)
+- [Agent autonomy levels (glossary)](03_wiki/glossary/agent-autonomy-levels.md)
+- [Agent memory management (glossary)](03_wiki/glossary/agent-memory-management.md)
 - [Agent-Loop Pattern (source summary)](02_sources/source-summaries/agent-loop-pattern.md)
 - [Click-to-Learn — the Eye as an active learning loop](03_wiki/decisions/click-to-learn.md)
 - [Codebase Self-Evaluation](03_wiki/skills/codebase-self-evaluation.md)
+- [Conversation knowledge extraction (glossary)](03_wiki/glossary/conversation-knowledge-extraction.md)
 - [Conversion Labeling](03_wiki/skills/conversion-labeling.md)
 - [Conversion Learning](03_wiki/concepts/conversion-learning.md)
 - [Corrected-Reference Lens](03_wiki/concepts/corrected-reference-lens.md)
