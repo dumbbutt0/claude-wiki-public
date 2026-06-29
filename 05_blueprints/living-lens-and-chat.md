@@ -36,7 +36,7 @@ dot down each strong connection. Ideas read as *connected*, not scattered.
 local-only (kept out of the public graph). `/connect` reports the strongest new pathways + promotes the best to real
 `wikilinks` (Tier 1). The Eye renders inferred edges **distinctly** (dashed/cooler). *"Connect ideas as fast as possible."*
 
-## Phase 3 — Runtime-development visualization  ▸
+## Phase 3 — Runtime-development visualization  ✅ (Eye 2.10.0)
 `eye_state.py --edges "a|b,…" --building "<note>"` → `activeEdges` in `eye-state.json`; the Eye lights those as **bright
 animated development conduits** + a HUD "building" label. Every command + the loop narrates as it works → opening the
 Lens shows a **live glowing subgraph of where Claude is developing the system.**
