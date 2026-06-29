@@ -8,7 +8,7 @@ updated: 2026-06-28
 sources: []
 source_count: 0
 tags: [blueprint, visualizer, eye, signal]
-related: ["[[ide-for-thought-assessment]]", "gap-cognitive-zoom", "[[eye-native-vs-custom]]", "gap-webgl-lens", "[[long-horizon-agent-loops]]"]
+related: ["[[ide-for-thought-assessment]]", "gap-cognitive-zoom", "[[eye-native-vs-custom]]", "gap-webgl-lens", "long-horizon-agent-loops"]
 iris_ring: inner
 mode: meta
 steward: auto

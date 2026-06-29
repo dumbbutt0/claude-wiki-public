@@ -8,7 +8,7 @@ updated: 2026-06-29
 sources: []
 source_count: 0
 tags: [pattern, security, agents, prompt-injection, autonomy]
-related: ["[[event-driven-autonomy]]", "[[determinism-at-the-authority-boundary]]", "autonomy-policy", "[[open-ideas-not-edge]]", "[[three-layer-zero-trust-audit]]", "[[prompt-injection]]"]
+related: ["[[event-driven-autonomy]]", "determinism-at-the-authority-boundary", "autonomy-policy", "open-ideas-not-edge", "three-layer-zero-trust-audit", "prompt-injection"]
 iris_ring: inner
 mode: meta
 steward: auto
@@ -49,7 +49,7 @@ the model's good behaviour cannot be the control. *Assume injection will eventua
    returns **structured labels**, never raw instructions, to the *acting* pass. Today's approximation = spotlighting +
    the egress cut; the labelled-summary pass is the next hardening.
 5. **Authority-boundary determinism + the human gate.** *Retrieval may suggest; deterministic gates must verify*
-   ([[determinism-at-the-authority-boundary]]). The leakage gate + the **`public_system` allowlist** + Tier-3
+   (determinism-at-the-authority-boundary). The leakage gate + the **`public_system` allowlist** + Tier-3
    quarantine (autonomy-policy) are deterministic — the publish boundary is enforced by code + human, not by trust.
 6. **Confinement.** Spawns run with `cwd` = the vault; `01_raw/` is immutable; the **main repo has no remote** (only the
    clean export can ever reach GitHub).

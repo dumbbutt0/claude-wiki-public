@@ -30,7 +30,7 @@ distilled knowledge** — was the gap (≈**9:1** capture-to-distill backlog; `s
 move is **not a third tool** — it is closing the distill loop and making it recurring, *locally*.
 
 - **Build now (local, privacy-safe):** the [[deep-mine-conversation]] distill loop restarted; an empty-no-more
-  **`skills/`** learn-as-we-go layer (`/skill`, seeded: [[conversion-labeling]], [[reject-first-gating]],
+  **`skills/`** learn-as-we-go layer (`/skill`, seeded: conversion-labeling, reject-first-gating,
   [[deep-mine-conversation]]); and `tools/steward_cron.sh` — an opt-in headless "night shift" that deep-mines the
   backlog + scoped-lints + commits **public artifacts only**. This realizes Hermes's *learning loop* without its cloud.
 - **Defer cloud Hermes / MaxHermes.**

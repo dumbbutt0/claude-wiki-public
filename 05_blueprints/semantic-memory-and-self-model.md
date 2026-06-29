@@ -8,7 +8,7 @@ updated: 2026-06-29
 sources: []
 source_count: 0
 tags: [blueprint, retrieval, self-model, architecture]
-related: ["[[growing-indefinitely]]", "[[ide-for-thought-assessment]]", "[[living-lens-and-chat]]", "context-priming", "persistent-knowledge-base", "[[long-horizon-agent-loops]]"]
+related: ["[[growing-indefinitely]]", "[[ide-for-thought-assessment]]", "[[living-lens-and-chat]]", "context-priming", "persistent-knowledge-base", "long-horizon-agent-loops"]
 iris_ring: inner
 mode: meta
 steward: auto

@@ -8,7 +8,7 @@ updated: 2026-06-28
 sources: ["ai-workspace-interfaces"]
 source_count: 1
 tags: [decision, visualizer, obsidian, lens, graph]
-related: ["wiki-eye-plugin", "gap-webgl-lens", "eye-layout-spec", "obsidian-native-graph", "gap-cognitive-zoom"]
+related: ["wiki-eye-plugin", "gap-webgl-lens", "eye-layout-spec", "obsidian-native-graph", "gap-cognitive-zoom", "[[when-does-a-knowledge-graph-outgrow-its-native-viewer]]", "[[what-can-a-custom-lens-show-that-a-native-graph-cannot]]"]
 revisit: when the Lens nears ~1.5–2k nodes (Canvas-2D strain) → build gap-webgl-lens; or if Extended Graph proves smooth at ~1k
 superseded_by: none (current)
 iris_ring: middle

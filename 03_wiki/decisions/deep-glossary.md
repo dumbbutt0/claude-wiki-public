@@ -8,7 +8,7 @@ updated: 2026-06-28
 sources: []
 source_count: 0
 tags: [decision, glossary, learning, privacy, web-research]
-related: ["[[click-to-learn]]", "[[open-ideas-not-edge]]", "[[conversion-learning]]", "[[long-horizon-agent-loops]]"]
+related: ["[[click-to-learn]]", "open-ideas-not-edge", "conversion-learning", "long-horizon-agent-loops"]
 revisit: when a field's glossary is dense enough to promote generic entries to public_system
 superseded_by: none (current)
 iris_ring: middle
@@ -33,7 +33,7 @@ target / contest / finding names, contract addresses).
 
 > Web research pulls knowledge **IN**; this boundary keeps the edge from leaking **OUT**. The query goes through the
 > public craft (*"ERC-4626 inflation attack"*), never the private hunt (*"<target> <finding-id>"*). This is
-> [[open-ideas-not-edge]] applied to the search box — and it fully serves "expand my knowledge," because what deepens
+> open-ideas-not-edge applied to the search box — and it fully serves "expand my knowledge," because what deepens
 > the craft is the public technique, not the owner's own finding ID.
 
 ## Privacy default
@@ -46,5 +46,5 @@ definition (one line) · mechanism · the menu (mitigations / variants / trade-o
 it's worth learning) · real-world · **sources** (URLs). Sourced + `claim_class: factual` where the web supports it.
 
 ## Relates
-[[click-to-learn]] (the trigger) · [[open-ideas-not-edge]] (the boundary) · [[conversion-learning]] (turning a read
-into a usable skill) · [[long-horizon-agent-loops]] (the loop that grows it).
+[[click-to-learn]] (the trigger) · open-ideas-not-edge (the boundary) · conversion-learning (turning a read
+into a usable skill) · long-horizon-agent-loops (the loop that grows it).

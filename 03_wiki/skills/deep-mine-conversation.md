@@ -8,7 +8,7 @@ updated: 2026-06-28
 sources: ["karpathy-llm-wiki"]
 source_count: 1
 tags: [skill, meta, wiki-maintenance, learned]
-related: ["mine-conversation", "autonomy-policy", "expanding-answer-base", "ingest-query-lint-loop", "[[conversion-labeling]]"]
+related: ["mine-conversation", "autonomy-policy", "expanding-answer-base", "ingest-query-lint-loop", "conversion-labeling"]
 iris_ring: middle
 mode: meta
 steward: auto

@@ -8,7 +8,7 @@ updated: 2026-06-29
 sources: []
 source_count: 0
 tags: [blueprint, visualizer, chat, link-inference, eye]
-related: ["[[ide-for-thought-assessment]]", "[[human-claude-workflow]]", "[[click-to-learn]]", "[[cognitive-zoom]]", "[[recall-review-loop]]", "[[operator-and-hermes]]", "autonomy-policy"]
+related: ["[[ide-for-thought-assessment]]", "[[human-claude-workflow]]", "[[click-to-learn]]", "[[cognitive-zoom]]", "recall-review-loop", "[[operator-and-hermes]]", "autonomy-policy"]
 iris_ring: inner
 mode: meta
 steward: auto

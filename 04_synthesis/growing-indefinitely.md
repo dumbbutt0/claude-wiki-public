@@ -8,7 +8,7 @@ updated: 2026-06-29
 sources: []
 source_count: 0
 tags: [synthesis, meta, architecture, self-model]
-related: ["[[ide-for-thought-assessment]]", "persistent-knowledge-base", "[[long-horizon-agent-loops]]", "[[living-lens-and-chat]]", "precision-ai-trainer", "[[human-claude-workflow]]"]
+related: ["[[ide-for-thought-assessment]]", "persistent-knowledge-base", "long-horizon-agent-loops", "[[living-lens-and-chat]]", "precision-ai-trainer", "[[human-claude-workflow]]"]
 iris_ring: pupil
 mode: meta
 steward: auto

@@ -8,7 +8,7 @@ updated: 2026-06-28
 sources: []
 source_count: 0
 tags: [blueprint, study-plan, meta]
-related: ["karpathy-llm-wiki", "[[evidence-learning-canon]]", "ingest-query-lint-loop", "[[open-ideas-not-edge]]", "personal-operating-system"]
+related: ["karpathy-llm-wiki", "evidence-learning-canon", "ingest-query-lint-loop", "open-ideas-not-edge", "personal-operating-system"]
 iris_ring: outer
 mode: meta
 steward: auto
@@ -30,10 +30,10 @@ You clicked **karpathy-llm-wiki** — the source pattern this whole system imple
 3. What's the **minimal copyable version** someone else could clone?
 
 ## Study directions
-- Re-read karpathy-llm-wiki against [[evidence-learning-canon]] (what you built on top).
+- Re-read karpathy-llm-wiki against evidence-learning-canon (what you built on top).
 - The gist's discipline you could still adopt: per-source contradiction detection, **scoped lint (changed + neighbours)**,
   deterministic index routing.
 
 ## Project seed
-Extract a public, copyable **"LLM-wiki starter"** from the `public_system` graph — the [[open-ideas-not-edge]] move (a
+Extract a public, copyable **"LLM-wiki starter"** from the `public_system` graph — the open-ideas-not-edge move (a
 pillar of personal-operating-system).

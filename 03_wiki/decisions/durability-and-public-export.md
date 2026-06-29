@@ -8,7 +8,7 @@ updated: 2026-06-28
 sources: []
 source_count: 0
 tags: [decision, durability, privacy, backup]
-related: ["[[open-ideas-not-edge]]", "[[long-horizon-agent-loops]]", "autonomy-policy", "[[eye-native-vs-custom]]"]
+related: ["open-ideas-not-edge", "long-horizon-agent-loops", "autonomy-policy", "[[eye-native-vs-custom]]"]
 revisit: if the public corpus grows enough to flip the GitHub repo public
 superseded_by: none (current)
 iris_ring: middle
@@ -21,7 +21,7 @@ graph_scope: public
 
 ## Problem
 Everything lived on **one Windows disk with no offsite backup** — one drive failure = total loss of ~1,000 nodes
-+ all history. The long-term-optimization #1 ("state outside the single machine" — [[long-horizon-agent-loops]]).
++ all history. The long-term-optimization #1 ("state outside the single machine" — long-horizon-agent-loops).
 **Complication:** the main git tree still contains pre-privacy-system private content (`01_raw/audit-watch/**` = the
 edge, the genesis design conversation, competitive-moat feedback), so it **cannot** be pushed to any remote.
 
@@ -32,7 +32,7 @@ edge, the genesis design conversation, competitive-moat feedback), so it **canno
 2. **Clean public export** (`tools/export_public.py` → `~/claude-wiki-public` → private GitHub
    `dumbbutt0/claude-wiki-public`): a **fresh-history** repo with **only the `public_system` pages** (35 methodology
    nodes), wikilinks to non-public pages **stripped to plain text**, + `graph-public.json` + a README. This is the
-   shareable "system logic" — [[open-ideas-not-edge]] enforced mechanically.
+   shareable "system logic" — open-ideas-not-edge enforced mechanically.
 
 ## The hard guard
 **The main `Claude-Wiki/` git repo stays LOCAL-ONLY — never add a public/shared remote to it.** It holds the edge.
@@ -45,5 +45,5 @@ The *only* thing that goes to GitHub is the clean export. To refresh GitHub afte
   privately. The audited export proved 0 target/edge/source leakage before the first push.
 
 ## Relates
-[[open-ideas-not-edge]] (the principle) · autonomy-policy (the privacy scopes) · [[long-horizon-agent-loops]]
+open-ideas-not-edge (the principle) · autonomy-policy (the privacy scopes) · long-horizon-agent-loops
 (durability as a long-horizon property).

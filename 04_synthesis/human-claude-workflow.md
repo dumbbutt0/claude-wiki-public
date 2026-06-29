@@ -8,7 +8,7 @@ updated: 2026-06-29
 sources: []
 source_count: 0
 tags: [synthesis, workflow, meta, ux]
-related: ["[[ide-for-thought-assessment]]", "[[click-to-learn]]", "[[recall-review-loop]]", "[[cognitive-zoom]]", "[[operator-and-hermes]]", "[[long-horizon-agent-loops]]"]
+related: ["[[ide-for-thought-assessment]]", "[[click-to-learn]]", "recall-review-loop", "[[cognitive-zoom]]", "[[operator-and-hermes]]", "long-horizon-agent-loops"]
 iris_ring: middle
 mode: meta
 steward: auto

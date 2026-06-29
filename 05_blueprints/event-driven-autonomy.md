@@ -8,7 +8,7 @@ updated: 2026-06-29
 sources: []
 source_count: 0
 tags: [blueprint, autonomy, architecture, daemon]
-related: ["[[growing-indefinitely]]", "[[semantic-memory-and-self-model]]", "[[living-lens-and-chat]]", "[[long-horizon-agent-loops]]", "[[self-maintenance-loop]]", "[[agent-loop]]"]
+related: ["[[growing-indefinitely]]", "[[semantic-memory-and-self-model]]", "[[living-lens-and-chat]]", "long-horizon-agent-loops", "[[self-maintenance-loop]]", "agent-loop"]
 iris_ring: inner
 mode: meta
 steward: auto
@@ -84,5 +84,5 @@ Tokens per event (but only on *real* events — no idle drain) · needs the mach
 Tier-3 quarantine are the safety net.
 
 ## Relates
-The graduation of [[long-horizon-agent-loops]] + [[self-maintenance-loop]]; enabled by
+The graduation of long-horizon-agent-loops + [[self-maintenance-loop]]; enabled by
 [[semantic-memory-and-self-model]] (instant re-orientation); in service of [[growing-indefinitely]].

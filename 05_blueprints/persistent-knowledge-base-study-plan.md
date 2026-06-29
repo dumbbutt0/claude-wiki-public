@@ -8,7 +8,7 @@ updated: 2026-06-28
 sources: []
 source_count: 0
 tags: [blueprint, study-plan, knowledge-management]
-related: ["persistent-knowledge-base", "karpathy-llm-wiki", "ingest-query-lint-loop", "[[inference-aware-scaling]]", "horizontal-scaling-hypothesis"]
+related: ["persistent-knowledge-base", "karpathy-llm-wiki", "ingest-query-lint-loop", "inference-aware-scaling", "horizontal-scaling-hypothesis"]
 iris_ring: outer
 mode: meta
 steward: auto
@@ -28,7 +28,7 @@ You clicked **persistent-knowledge-base**.
 1. **When does a compiled KB beat RAG, quantitatively?** At what query-reuse count does the upfront ingest cost pay off?
 2. **How do you keep it from rotting** (stale claims) as the graph grows — lint cadence vs graph size?
 3. **Could the KB be the retrieval store for a small local model** (KB → context → cheap inference)? — ties to
-   [[inference-aware-scaling]] + the horizontal-scaling-hypothesis.
+   inference-aware-scaling + the horizontal-scaling-hypothesis.
 
 ## Study directions
 - Place the LLM-wiki pattern against **RAG / GraphRAG / memory-augmented agents** — where does it sit, what does it win?
