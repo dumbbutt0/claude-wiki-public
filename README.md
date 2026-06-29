@@ -1,7 +1,7 @@
 # Claude-Wiki — public methodology
 
 The shareable **system-logic** subset of a personal LLM-wiki (Karpathy's pattern), maintained by Claude Code.
-**Only `privacy_scope: public_system` pages are here** — 49 methodology nodes on agent loops, conversion
+**Only `privacy_scope: public_system` pages are here** — 50 methodology nodes on agent loops, conversion
 learning, evaluation discipline, and the wiki's own architecture. The owner's sources, project internals, and
 the *edge* never leave their machine — *"publish the ideas, not the edge."*
 
@@ -31,6 +31,7 @@ stripped to plain text on export.
 - [Evaluate Tool Effectiveness](03_wiki/capabilities/evaluate-tool-effectiveness.md)
 - [Eye — custom Lens + native-graph companion (hybrid)](03_wiki/decisions/eye-native-vs-custom.md)
 - [Honest Partial Evaluation](03_wiki/concepts/honest-partial-eval.md)
+- [Human ↔ Claude workflow — friction + small steps](04_synthesis/human-claude-workflow.md)
 - [IDE for Thought — where the system stands](04_synthesis/ide-for-thought-assessment.md)
 - [Inference-Aware Scaling](03_wiki/concepts/inference-aware-scaling.md)
 - [Invariant Families over Categories](03_wiki/concepts/invariant-families-over-categories.md)
