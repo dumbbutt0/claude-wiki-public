@@ -1,7 +1,7 @@
 # Claude-Wiki — public methodology
 
 The shareable **system-logic** subset of a personal LLM-wiki (Karpathy's pattern), maintained by Claude Code.
-**Only `privacy_scope: public_system` pages are here** — 40 methodology nodes on agent loops, conversion
+**Only `privacy_scope: public_system` pages are here** — 42 methodology nodes on agent loops, conversion
 learning, evaluation discipline, and the wiki's own architecture. The owner's sources, project internals, and
 the *edge* never leave their machine — *"publish the ideas, not the edge."*
 
@@ -32,6 +32,7 @@ stripped to plain text on export.
 - [Inference-Aware Scaling](03_wiki/concepts/inference-aware-scaling.md)
 - [Invariant Families over Categories](03_wiki/concepts/invariant-families-over-categories.md)
 - [Karpathy LLM-Wiki — study plan](05_blueprints/karpathy-llm-wiki-study-plan.md)
+- [LLM self-verification (glossary)](03_wiki/glossary/llm-self-verification.md)
 - [Long-Horizon Agent Loops (+1000 nodes)](04_synthesis/long-horizon-agent-loops.md)
 - [Loop Stop Conditions](03_wiki/concepts/loop-stop-conditions.md)
 - [Open the Ideas, Not the Edge](03_wiki/concepts/open-ideas-not-edge.md)
@@ -39,6 +40,7 @@ stripped to plain text on export.
 - [Orchestration Governor (govern, don't analyze)](03_wiki/concepts/orchestration-governor.md)
 - [Persistent Knowledge Base — study plan](05_blueprints/persistent-knowledge-base-study-plan.md)
 - [Precedent-Guided, Source-Anchored Retrieval](03_wiki/patterns/precedent-guided-source-anchored.md)
+- [Reinforcement learning with verifiable rewards (glossary)](03_wiki/glossary/reinforcement-learning-verifiable-rewards.md)
 - [Reject-First Gating](03_wiki/skills/reject-first-gating.md)
 - [Reject-First Precision](03_wiki/patterns/reject-first-precision.md)
 - [Report Defensibility Review](03_wiki/capabilities/report-defensibility-review.md)
