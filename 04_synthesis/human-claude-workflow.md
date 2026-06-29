@@ -47,9 +47,12 @@ research. Two panes: the Lens and the note, hopped between.
 - ✅ **Persistent north-star goal + progress — BUILT (`/goal`).** `eye-state` already carries a `goal` ([[click-to-learn]] bridge); surface
   it *persistently* and show how many goal-related nodes are fresh / studied / due — so the Lens answers *"am I moving
   toward my goal?"*, not just *"what's here?"* This is the missing **long-term-goaling** layer.
-- ▸ **A "queued to research · due to review" line** — the full pending human↔Claude exchange at a glance.
-- ▸ **A one-gesture "drain my clicks now"** — let the human trigger the round-trip from the Lens (write a sentinel the
-  running loop watches) instead of switching to the terminal. Tightens the **cross-chain** handoff.
+- ✅ **A "queued · due · gaps" line — BUILT.** The HUD **EXCHANGE** line now shows the full pending human↔Claude
+  exchange at a glance: clicks *queued* to research · concepts *due* to review · *open* gaps.
+- ✅ **A one-gesture "drain my clicks now" — BUILT.** A **`⟳ drain N`** chip appears in the Lens whenever clicks are
+  queued; clicking it writes `09_working/drain-request.json` (the sentinel a running `/loop` or the cron services) and
+  shows honest feedback (*"Claude will pick it up"* when live, else *"runs on the next /loop or /study --drain"*).
+  Tightens the **cross-chain** handoff — no terminal round-trip to signal intent.
 - ▸ **Surface the loop state in Obsidian**, not just the Lens — a status-bar item ("● Claude live · 3 queued · 12 due").
 
 ## The principle
