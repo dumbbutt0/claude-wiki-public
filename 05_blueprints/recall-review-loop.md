@@ -2,7 +2,7 @@
 title: "Recall/Review Loop — active-recall spaced repetition"
 aliases: ["Recall/Review Loop", "recall-review-loop", "review loop", "spaced repetition"]
 type: blueprint
-status: proposed
+status: active
 created: 2026-06-28
 updated: 2026-06-28
 sources: []

@@ -6,6 +6,10 @@ field: offensive-security
 status: active
 created: 2026-06-28
 updated: 2026-06-28
+review_due: 2026-06-28
+interval: 0
+ease: 2.5
+review_attempts: 0
 sources:
   - "https://genai.owasp.org/llmrisk/llm01-prompt-injection/"
   - "https://www.indusface.com/learning/owasp-llm-system-prompt-leakage/"

@@ -6,6 +6,10 @@ field: learning
 status: active
 created: 2026-06-28
 updated: 2026-06-28
+review_due: 2026-06-28
+interval: 0
+ease: 2.5
+review_attempts: 0
 sources:
   - "https://onlinelibrary.wiley.com/doi/10.1111/j.1553-2712.2008.00227.x"
   - "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2019.02396/full"

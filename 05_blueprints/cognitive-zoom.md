@@ -2,7 +2,7 @@
 title: "Cognitive Zoom — fold dots into constellations"
 aliases: ["Cognitive Zoom", "cognitive-zoom", "level-of-detail graph", "fold constellations"]
 type: blueprint
-status: proposed
+status: active
 created: 2026-06-28
 updated: 2026-06-28
 sources: []

@@ -6,6 +6,10 @@ field: ai-engineering
 status: active
 created: 2026-06-28
 updated: 2026-06-28
+review_due: 2026-06-28
+interval: 0
+ease: 2.5
+review_attempts: 0
 sources:
   - "https://arxiv.org/html/2510.12023v1"
   - "https://arxiv.org/pdf/2602.15859"

@@ -6,6 +6,11 @@ field: ai-engineering
 status: active
 created: 2026-06-28
 updated: 2026-06-28
+last_reviewed: 2026-06-28
+review_due: 2026-06-29
+interval: 1
+ease: 2.6
+review_attempts: 1
 sources:
   - "https://galileo.ai/blog/ai-agent-guardrails-framework"
   - "https://www.leanware.co/insights/agentic-ai-guardrails-how-to-build-safe-and-scalable-autonomous-systems"
