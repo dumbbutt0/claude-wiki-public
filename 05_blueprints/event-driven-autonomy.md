@@ -49,8 +49,14 @@ runs `claude -p` on a timer; the daemon is the same primitive made **event-trigg
 2. **Richer intents** — each event names its command so the daemon routes it (mostly present already).
 3. **Tighten per-command `allowed-tools`** — headless is a real permission surface; the autonomy tiers + leakage gate
    are the guardrails.
-4. **Self-triggering** — the steward enqueues its *own* research/connect intents → outputs become inputs. Bounded by a
-   budget + the tiers. *This is the system interacting with itself.*
+4. **✅ Self-triggering (built · opt-in to enable)** — `tools/self_trigger.py` enqueues the daemon's *own*
+   learning-intents, **aimed** at the self-model direction (semantic alignment to the north-star); the daemon then
+   `/study`s them, and as study creates questions + links those become next-round fuel → outputs become inputs.
+   Bounded on every axis: **idle-fill only** (stands down if humans queued work) · per-run cap · daily budget · dedup
+   vs studied/queued/already-triggered · **never the edge** (restricted_private skipped) · Tier 0-2 only. Runs on
+   `tools/lens-trigger.timer` (every 3h). **Enabling the autonomous timer is a deliberate human opt-in**
+   (`systemctl --user enable --now lens-trigger.timer`) — a recurring self-spawning loop must be the owner's explicit
+   choice, not the agent's. *This is the system interacting with itself.*
 5. **✅ Daemonize** — `tools/lens-daemon.service` (systemd **user** service): `systemctl --user enable --now` +
    `loginctl enable-linger` = auto-start, restart-on-failure, survives logout + reboot (conservative
    `--max-per-hour 8`, `--timeout 900`). Verified: a chat round-trip completed against the *detached* service
