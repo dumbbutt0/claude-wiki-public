@@ -1,7 +1,7 @@
 # Claude-Wiki — public methodology
 
 The shareable **system-logic** subset of a personal LLM-wiki (Karpathy's pattern), maintained by Claude Code.
-**Only `privacy_scope: public_system` pages are here** — 52 methodology nodes on agent loops, conversion
+**Only `privacy_scope: public_system` pages are here** — 53 methodology nodes on agent loops, conversion
 learning, evaluation discipline, and the wiki's own architecture. The owner's sources, project internals, and
 the *edge* never leave their machine — *"publish the ideas, not the edge."*
 
@@ -54,6 +54,7 @@ stripped to plain text on export.
 - [Safe Post-Run State Sync](03_wiki/patterns/safe-post-run-sync.md)
 - [Scaling Laws — study plan](05_blueprints/scaling-laws-study-plan.md)
 - [Self-Maintenance Loop — install + automate the lint](05_blueprints/self-maintenance-loop.md)
+- [Semantic memory + the self-model spine](05_blueprints/semantic-memory-and-self-model.md)
 - [Severity Calibration](03_wiki/concepts/severity-calibration.md)
 - [Source an Answer-Key Eval](03_wiki/skills/source-answer-key-eval.md)
 - [Structured Adversarial Evidence Learning](04_synthesis/structured-adversarial-evidence-learning.md)
