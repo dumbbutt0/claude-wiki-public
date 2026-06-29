@@ -47,8 +47,12 @@ runs `claude -p` on a timer; the daemon is the same primitive made **event-trigg
    (`steward_cron.sh` shared it) — fixed by handing Claude the command spec to read+execute; then a full chat
    round-trip validated end-to-end.*
 2. **Richer intents** — each event names its command so the daemon routes it (mostly present already).
-3. **Tighten per-command `allowed-tools`** — headless is a real permission surface; the autonomy tiers + leakage gate
-   are the guardrails.
+3. **✅ Tighten the permission surface** — every daemon/cron `claude -p` spawn now passes **`--disallowed-tools`**
+   (deny-rules block even under acceptEdits): no `git push` · no `export_public` · no `WebFetch`/`curl`/`wget`/`nc`/
+   `ssh`/`scp` · no `rm`/`sudo`. That **cuts the lethal-trifecta egress leg** → publication becomes a human action.
+   Plus **input spotlighting** (queue/ingested/web content is treated as DATA, not instructions) + per-command
+   `allowed-tools`. Crown-jewel guarantee is *structural*: the main repo has no remote, so an autonomous spawn **cannot
+   publish**. Full methodology: [[autonomous-agent-threat-surface]].
 4. **✅ Self-triggering (built · opt-in to enable)** — `tools/self_trigger.py` enqueues the daemon's *own*
    learning-intents, **aimed** at the self-model direction (semantic alignment to the north-star); the daemon then
    `/study`s them, and as study creates questions + links those become next-round fuel → outputs become inputs.

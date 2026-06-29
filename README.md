@@ -1,7 +1,7 @@
 # Claude-Wiki — public methodology
 
 The shareable **system-logic** subset of a personal LLM-wiki (Karpathy's pattern), maintained by Claude Code.
-**Only `privacy_scope: public_system` pages are here** — 54 methodology nodes on agent loops, conversion
+**Only `privacy_scope: public_system` pages are here** — 55 methodology nodes on agent loops, conversion
 learning, evaluation discipline, and the wiki's own architecture. The owner's sources, project internals, and
 the *edge* never leave their machine — *"publish the ideas, not the edge."*
 
@@ -14,6 +14,7 @@ stripped to plain text on export.
 - [Agent autonomy levels (glossary)](03_wiki/glossary/agent-autonomy-levels.md)
 - [Agent memory management (glossary)](03_wiki/glossary/agent-memory-management.md)
 - [Agent-Loop Pattern (source summary)](02_sources/source-summaries/agent-loop-pattern.md)
+- [Autonomous-agent threat-surface reduction](03_wiki/patterns/autonomous-agent-threat-surface.md)
 - [Click-to-Learn — the Eye as an active learning loop](03_wiki/decisions/click-to-learn.md)
 - [Codebase Self-Evaluation](03_wiki/skills/codebase-self-evaluation.md)
 - [Cognitive Zoom — fold dots into constellations](05_blueprints/cognitive-zoom.md)
