@@ -1,7 +1,7 @@
 # Claude-Wiki — public methodology
 
 The shareable **system-logic** subset of a personal LLM-wiki (Karpathy's pattern), maintained by Claude Code.
-**Only `privacy_scope: public_system` pages are here** — 53 methodology nodes on agent loops, conversion
+**Only `privacy_scope: public_system` pages are here** — 54 methodology nodes on agent loops, conversion
 learning, evaluation discipline, and the wiki's own architecture. The owner's sources, project internals, and
 the *edge* never leave their machine — *"publish the ideas, not the edge."*
 
@@ -29,6 +29,7 @@ stripped to plain text on export.
 - [Durability — encrypted backup + clean public export](03_wiki/decisions/durability-and-public-export.md)
 - [Eval-Driven Improvement Loop](03_wiki/patterns/eval-driven-improvement-loop.md)
 - [Evaluate Tool Effectiveness](03_wiki/capabilities/evaluate-tool-effectiveness.md)
+- [Event-driven autonomy — the loopless engine](05_blueprints/event-driven-autonomy.md)
 - [Eye — custom Lens + native-graph companion (hybrid)](03_wiki/decisions/eye-native-vs-custom.md)
 - [Honest Partial Evaluation](03_wiki/concepts/honest-partial-eval.md)
 - [Human ↔ Claude workflow — friction + small steps](04_synthesis/human-claude-workflow.md)
