@@ -43,13 +43,18 @@ runs `claude -p` on a timer; the daemon is the same primitive made **event-trigg
 1. **✅ `lens_daemon.py`** — watches `chat-inbox` → `/chat --drain` and `learning-intent-queue` → `/study --drain`.
    Single-threaded (one `claude -p` at a time = an inherent lock against concurrent graph writes), debounce (batch
    bursts), per-command cooldown, hourly rate-limit (runaway backstop), per-invocation timeout, `--dry-run` / `--once`.
-   *Built + dry-run validated.*
+   *Built; the live smoke test caught a real bug — headless `-p` doesn't auto-load project slash commands
+   (`steward_cron.sh` shared it) — fixed by handing Claude the command spec to read+execute; then a full chat
+   round-trip validated end-to-end.*
 2. **Richer intents** — each event names its command so the daemon routes it (mostly present already).
 3. **Tighten per-command `allowed-tools`** — headless is a real permission surface; the autonomy tiers + leakage gate
    are the guardrails.
 4. **Self-triggering** — the steward enqueues its *own* research/connect intents → outputs become inputs. Bounded by a
    budget + the tiers. *This is the system interacting with itself.*
-5. **Daemonize** (systemd / pm2) — survives reboots = true always-on.
+5. **✅ Daemonize** — `tools/lens-daemon.service` (systemd **user** service): `systemctl --user enable --now` +
+   `loginctl enable-linger` = auto-start, restart-on-failure, survives logout + reboot (conservative
+   `--max-per-hour 8`, `--timeout 900`). Verified: a chat round-trip completed against the *detached* service
+   (`claude` auth + PATH resolve under systemd).
 6. **Polish** — `stream-json` for token-level live narration to the Lens; a small SQLite queue for atomic concurrency.
 
 ## Run EITHER the daemon OR the loop
