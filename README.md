@@ -1,7 +1,7 @@
 # Claude-Wiki — public methodology
 
 The shareable **system-logic** subset of a personal LLM-wiki (Karpathy's pattern), maintained by Claude Code.
-**Only `privacy_scope: public_system` pages are here** — 51 methodology nodes on agent loops, conversion
+**Only `privacy_scope: public_system` pages are here** — 52 methodology nodes on agent loops, conversion
 learning, evaluation discipline, and the wiki's own architecture. The owner's sources, project internals, and
 the *edge* never leave their machine — *"publish the ideas, not the edge."*
 
@@ -60,3 +60,4 @@ stripped to plain text on export.
 - [Symbolic execution & SMT solving (glossary)](03_wiki/glossary/symbolic-execution.md)
 - [The Evidence-Learning Canon](04_synthesis/evidence-learning-canon.md)
 - [Three-Layer Zero-Trust Audit Architecture](03_wiki/patterns/three-layer-zero-trust-audit.md)
+- [What would make this grow with me indefinitely](04_synthesis/growing-indefinitely.md)
