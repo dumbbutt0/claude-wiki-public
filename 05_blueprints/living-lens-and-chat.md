@@ -41,7 +41,7 @@ local-only (kept out of the public graph). `/connect` reports the strongest new 
 animated development conduits** + a HUD "building" label. Every command + the loop narrates as it works → opening the
 Lens shows a **live glowing subgraph of where Claude is developing the system.**
 
-## Phase 4 — The chat (Obsidian ↔ a running Claude session)
+## Phase 4 — The chat (Obsidian ↔ a running Claude session)  ✅ (Eye 2.11.0)
 File bridge: `09_working/chat-inbox.jsonl` (plugin appends user messages) + `chat-outbox.jsonl` (Claude appends replies
 + node refs + artifact paths). A chat panel in the Lens; a `/chat` command that classifies intent (find · internal /
 external research · develop-system · write artifact/paper/blueprint · life-optimize), **acts** (reusing `/recall`
