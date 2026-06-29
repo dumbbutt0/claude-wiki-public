@@ -1,7 +1,7 @@
 # Claude-Wiki — public methodology
 
 The shareable **system-logic** subset of a personal LLM-wiki (Karpathy's pattern), maintained by Claude Code.
-**Only `privacy_scope: public_system` pages are here** — 55 methodology nodes on agent loops, conversion
+**Only `privacy_scope: public_system` pages are here** — 61 methodology nodes on agent loops, conversion
 learning, evaluation discipline, and the wiki's own architecture. The owner's sources, project internals, and
 the *edge* never leave their machine — *"publish the ideas, not the edge."*
 
@@ -15,7 +15,9 @@ stripped to plain text on export.
 - [Agent memory management (glossary)](03_wiki/glossary/agent-memory-management.md)
 - [Agent-Loop Pattern (source summary)](02_sources/source-summaries/agent-loop-pattern.md)
 - [Autonomous-agent threat-surface reduction](03_wiki/patterns/autonomous-agent-threat-surface.md)
+- [Can non-conversion (the primary_blocker label) become a model training signal?](03_wiki/questions/can-non-conversion-become-a-training-signal.md)
 - [Click-to-Learn — the Eye as an active learning loop](03_wiki/decisions/click-to-learn.md)
+- [Code-Search Techniques (find strings across repos & GitHub)](03_wiki/skills/code-search-techniques.md)
 - [Codebase Self-Evaluation](03_wiki/skills/codebase-self-evaluation.md)
 - [Cognitive Zoom — fold dots into constellations](05_blueprints/cognitive-zoom.md)
 - [Conversation knowledge extraction (glossary)](03_wiki/glossary/conversation-knowledge-extraction.md)
@@ -27,11 +29,15 @@ stripped to plain text on export.
 - [Deep-Mine a Conversation](03_wiki/skills/deep-mine-conversation.md)
 - [Deliberate practice (glossary)](03_wiki/glossary/deliberate-practice.md)
 - [Determinism at the Authority Boundary](03_wiki/concepts/determinism-at-the-authority-boundary.md)
+- [Does the Evidence-Learning Canon actually transfer across domains?](03_wiki/questions/does-the-evidence-learning-canon-transfer.md)
 - [Durability — encrypted backup + clean public export](03_wiki/decisions/durability-and-public-export.md)
 - [Eval-Driven Improvement Loop](03_wiki/patterns/eval-driven-improvement-loop.md)
 - [Evaluate Tool Effectiveness](03_wiki/capabilities/evaluate-tool-effectiveness.md)
 - [Event-driven autonomy — the loopless engine](05_blueprints/event-driven-autonomy.md)
+- [Evidence-Learning Canon — study plan](05_blueprints/evidence-learning-canon-study-plan.md)
 - [Eye — custom Lens + native-graph companion (hybrid)](03_wiki/decisions/eye-native-vs-custom.md)
+- [For a local/edge model, does the binding scaling law shift from params×data to retrieval×context?](03_wiki/questions/edge-scaling-law-retrieval-vs-params.md)
+- [Gap — coverage detector (missing module = failure)](03_wiki/gaps/gap-coverage-detector.md)
 - [Honest Partial Evaluation](03_wiki/concepts/honest-partial-eval.md)
 - [Human ↔ Claude workflow — friction + small steps](04_synthesis/human-claude-workflow.md)
 - [IDE for Thought — where the system stands](04_synthesis/ide-for-thought-assessment.md)

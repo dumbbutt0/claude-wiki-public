@@ -8,7 +8,7 @@ updated: 2026-06-28
 sources: []
 source_count: 0
 tags: [synthesis, ai-learning, methodology, canon, capstone]
-related: ["[[structured-adversarial-evidence-learning]]", "[[conversion-learning]]", "[[adversarial-reasoning]]", "[[reject-first-precision]]", "[[determinism-at-the-authority-boundary]]", "[[orchestration-governor]]", "[[open-ideas-not-edge]]", "personal-operating-system", "precision-ai-trainer", "skill-tree"]
+related: ["[[structured-adversarial-evidence-learning]]", "[[conversion-learning]]", "[[adversarial-reasoning]]", "[[reject-first-precision]]", "[[determinism-at-the-authority-boundary]]", "[[orchestration-governor]]", "[[open-ideas-not-edge]]", "personal-operating-system", "precision-ai-trainer", "skill-tree", "[[evidence-learning-canon-study-plan]]", "[[does-the-evidence-learning-canon-transfer]]", "[[can-non-conversion-become-a-training-signal]]", "ground-truth-metrics", "outcome-learning-loop", "[[growing-indefinitely]]"]
 iris_ring: pupil
 mode: ai-engineering
 steward: auto
@@ -77,3 +77,9 @@ personal-operating-system and the root of the skill-tree.
 
 > Start here, then follow the spine: [[structured-adversarial-evidence-learning]] → [[conversion-learning]] →
 > [[reject-first-precision]] → [[determinism-at-the-authority-boundary]].
+
+## Open edges (grown by /study, 2026-06-28)
+The canon is well-argued but **asserted, not yet demonstrated.** Two questions now make that testable —
+[[does-the-evidence-learning-canon-transfer]] and [[can-non-conversion-become-a-training-signal]] — collected into
+[[evidence-learning-canon-study-plan]] (cross-domain transfer demo · blocker-label dataset). This is the path from
+*belief* to *result*, and the bridge to the precision-ai-trainer direction.
