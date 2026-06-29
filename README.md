@@ -1,7 +1,7 @@
 # Claude-Wiki — public methodology
 
 The shareable **system-logic** subset of a personal LLM-wiki (Karpathy's pattern), maintained by Claude Code.
-**Only `privacy_scope: public_system` pages are here** — 50 methodology nodes on agent loops, conversion
+**Only `privacy_scope: public_system` pages are here** — 51 methodology nodes on agent loops, conversion
 learning, evaluation discipline, and the wiki's own architecture. The owner's sources, project internals, and
 the *edge* never leave their machine — *"publish the ideas, not the edge."*
 
@@ -37,6 +37,7 @@ stripped to plain text on export.
 - [Invariant Families over Categories](03_wiki/concepts/invariant-families-over-categories.md)
 - [Karpathy LLM-Wiki — study plan](05_blueprints/karpathy-llm-wiki-study-plan.md)
 - [LLM self-verification (glossary)](03_wiki/glossary/llm-self-verification.md)
+- [Living, self-connecting Lens + a Claude-session chat](05_blueprints/living-lens-and-chat.md)
 - [Long-Horizon Agent Loops (+1000 nodes)](04_synthesis/long-horizon-agent-loops.md)
 - [Loop Stop Conditions](03_wiki/concepts/loop-stop-conditions.md)
 - [Open the Ideas, Not the Edge](03_wiki/concepts/open-ideas-not-edge.md)
