@@ -1,7 +1,7 @@
 # Claude-Wiki — public methodology
 
 The shareable **system-logic** subset of a personal LLM-wiki (Karpathy's pattern), maintained by Claude Code.
-**Only `privacy_scope: public_system` pages are here** — 44 methodology nodes on agent loops, conversion
+**Only `privacy_scope: public_system` pages are here** — 45 methodology nodes on agent loops, conversion
 learning, evaluation discipline, and the wiki's own architecture. The owner's sources, project internals, and
 the *edge* never leave their machine — *"publish the ideas, not the edge."*
 
@@ -41,6 +41,7 @@ stripped to plain text on export.
 - [Orchestration Governor (govern, don't analyze)](03_wiki/concepts/orchestration-governor.md)
 - [Persistent Knowledge Base — study plan](05_blueprints/persistent-knowledge-base-study-plan.md)
 - [Precedent-Guided, Source-Anchored Retrieval](03_wiki/patterns/precedent-guided-source-anchored.md)
+- [Prompt injection & system-prompt leakage (glossary)](03_wiki/glossary/prompt-injection.md)
 - [Reinforcement learning with verifiable rewards (glossary)](03_wiki/glossary/reinforcement-learning-verifiable-rewards.md)
 - [Reject-First Gating](03_wiki/skills/reject-first-gating.md)
 - [Reject-First Precision](03_wiki/patterns/reject-first-precision.md)
