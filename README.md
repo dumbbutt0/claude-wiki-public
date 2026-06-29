@@ -1,7 +1,7 @@
 # Claude-Wiki — public methodology
 
 The shareable **system-logic** subset of a personal LLM-wiki (Karpathy's pattern), maintained by Claude Code.
-**Only `privacy_scope: public_system` pages are here** — 45 methodology nodes on agent loops, conversion
+**Only `privacy_scope: public_system` pages are here** — 49 methodology nodes on agent loops, conversion
 learning, evaluation discipline, and the wiki's own architecture. The owner's sources, project internals, and
 the *edge* never leave their machine — *"publish the ideas, not the edge."*
 
@@ -16,6 +16,7 @@ stripped to plain text on export.
 - [Agent-Loop Pattern (source summary)](02_sources/source-summaries/agent-loop-pattern.md)
 - [Click-to-Learn — the Eye as an active learning loop](03_wiki/decisions/click-to-learn.md)
 - [Codebase Self-Evaluation](03_wiki/skills/codebase-self-evaluation.md)
+- [Cognitive Zoom — fold dots into constellations](05_blueprints/cognitive-zoom.md)
 - [Conversation knowledge extraction (glossary)](03_wiki/glossary/conversation-knowledge-extraction.md)
 - [Conversion Labeling](03_wiki/skills/conversion-labeling.md)
 - [Conversion Learning](03_wiki/concepts/conversion-learning.md)
@@ -30,6 +31,7 @@ stripped to plain text on export.
 - [Evaluate Tool Effectiveness](03_wiki/capabilities/evaluate-tool-effectiveness.md)
 - [Eye — custom Lens + native-graph companion (hybrid)](03_wiki/decisions/eye-native-vs-custom.md)
 - [Honest Partial Evaluation](03_wiki/concepts/honest-partial-eval.md)
+- [IDE for Thought — where the system stands](04_synthesis/ide-for-thought-assessment.md)
 - [Inference-Aware Scaling](03_wiki/concepts/inference-aware-scaling.md)
 - [Invariant Families over Categories](03_wiki/concepts/invariant-families-over-categories.md)
 - [Karpathy LLM-Wiki — study plan](05_blueprints/karpathy-llm-wiki-study-plan.md)
@@ -42,12 +44,14 @@ stripped to plain text on export.
 - [Persistent Knowledge Base — study plan](05_blueprints/persistent-knowledge-base-study-plan.md)
 - [Precedent-Guided, Source-Anchored Retrieval](03_wiki/patterns/precedent-guided-source-anchored.md)
 - [Prompt injection & system-prompt leakage (glossary)](03_wiki/glossary/prompt-injection.md)
+- [Recall/Review Loop — active-recall spaced repetition](05_blueprints/recall-review-loop.md)
 - [Reinforcement learning with verifiable rewards (glossary)](03_wiki/glossary/reinforcement-learning-verifiable-rewards.md)
 - [Reject-First Gating](03_wiki/skills/reject-first-gating.md)
 - [Reject-First Precision](03_wiki/patterns/reject-first-precision.md)
 - [Report Defensibility Review](03_wiki/capabilities/report-defensibility-review.md)
 - [Safe Post-Run State Sync](03_wiki/patterns/safe-post-run-sync.md)
 - [Scaling Laws — study plan](05_blueprints/scaling-laws-study-plan.md)
+- [Self-Maintenance Loop — install + automate the lint](05_blueprints/self-maintenance-loop.md)
 - [Severity Calibration](03_wiki/concepts/severity-calibration.md)
 - [Source an Answer-Key Eval](03_wiki/skills/source-answer-key-eval.md)
 - [Structured Adversarial Evidence Learning](04_synthesis/structured-adversarial-evidence-learning.md)
