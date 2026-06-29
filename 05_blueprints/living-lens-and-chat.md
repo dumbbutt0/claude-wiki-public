@@ -30,7 +30,7 @@ No spin. Dots spread across the whole **almond ellipse** (not the inner iris cir
 the emphasis:** all links drawn (was reciprocal-only), reciprocal brighter, + a **living-conduit** layer sending a slow
 dot down each strong connection. Ideas read as *connected*, not scattered.
 
-## Phase 2 — Link-inference engine  ▸ next
+## Phase 2 — Link-inference engine  ✅ (Eye 2.9.0)
 `tools/infer_links.py`: fast **tag + shared-term overlap** between nodes → inferred edges in
 `07_visualizer/graph-inferred.json` (`type:"inferred"`, score, reason). No API, no page-text edits, reversible,
 local-only (kept out of the public graph). `/connect` reports the strongest new pathways + promotes the best to real
