@@ -65,7 +65,14 @@ runs `claude -p` on a timer; the daemon is the same primitive made **event-trigg
    `loginctl enable-linger` = auto-start, restart-on-failure, survives logout + reboot (conservative
    `--max-per-hour 8`, `--timeout 900`). Verified: a chat round-trip completed against the *detached* service
    (`claude` auth + PATH resolve under systemd).
-6. **Polish** — `stream-json` for token-level live narration to the Lens; a small SQLite queue for atomic concurrency.
+6. **✅ Polish** — **stream-json live narration**: the daemon spawns with `--output-format stream-json` and surfaces
+   each sub-step (`⚙ WebSearch · …`, `⚙ Write · page.md`, `💭 …`) to its log + a throttled, **atomic** (temp+rename) Lens
+   HUD ticker, so you *watch it think* (`--no-stream` to disable; a watchdog thread enforces the timeout on a stalled
+   stream). **SQLite queue — deliberately deferred (not built).** Under the *one-engine* rule the queues have a single
+   drainer, and the append + mark-processed design loses no messages (a partial read self-heals next poll), so
+   atomic-*dequeue* solves a problem this layout doesn't have — and the Obsidian plugin can't use SQLite without a heavy
+   dependency. The real concurrency fix here was **atomic state writes** (done); SQLite stays a noted option only if a
+   future *multi-writer* design ever needs it.
 
 ## Run EITHER the daemon OR the loop
 Both drain the same queues — running both double-processes every event. **Going live with the daemon = stop the `/loop`
