@@ -44,7 +44,7 @@ research. Two panes: the Lens and the note, hopped between.
    up to over weeks. → **NEXT** (see below).
 
 ## The next small steps (prioritized)
-- ▸ **Persistent north-star goal + progress.** `eye-state` already carries a `goal` ([[click-to-learn]] bridge); surface
+- ✅ **Persistent north-star goal + progress — BUILT (`/goal`).** `eye-state` already carries a `goal` ([[click-to-learn]] bridge); surface
   it *persistently* and show how many goal-related nodes are fresh / studied / due — so the Lens answers *"am I moving
   toward my goal?"*, not just *"what's here?"* This is the missing **long-term-goaling** layer.
 - ▸ **A "queued to research · due to review" line** — the full pending human↔Claude exchange at a glance.
