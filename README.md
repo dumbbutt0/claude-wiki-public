@@ -1,7 +1,7 @@
 # Claude-Wiki — public methodology
 
 The shareable **system-logic** subset of a personal LLM-wiki (Karpathy's pattern), maintained by Claude Code.
-**Only `privacy_scope: public_system` pages are here** — 42 methodology nodes on agent loops, conversion
+**Only `privacy_scope: public_system` pages are here** — 44 methodology nodes on agent loops, conversion
 learning, evaluation discipline, and the wiki's own architecture. The owner's sources, project internals, and
 the *edge* never leave their machine — *"publish the ideas, not the edge."*
 
@@ -23,6 +23,7 @@ stripped to plain text on export.
 - [Decentralized AI Training Platform (exploratory)](05_blueprints/decentralized-ai-training.md)
 - [Deep glossary — web-researched across fields](03_wiki/decisions/deep-glossary.md)
 - [Deep-Mine a Conversation](03_wiki/skills/deep-mine-conversation.md)
+- [Deliberate practice (glossary)](03_wiki/glossary/deliberate-practice.md)
 - [Determinism at the Authority Boundary](03_wiki/concepts/determinism-at-the-authority-boundary.md)
 - [Durability — encrypted backup + clean public export](03_wiki/decisions/durability-and-public-export.md)
 - [Eval-Driven Improvement Loop](03_wiki/patterns/eval-driven-improvement-loop.md)
@@ -49,5 +50,6 @@ stripped to plain text on export.
 - [Severity Calibration](03_wiki/concepts/severity-calibration.md)
 - [Source an Answer-Key Eval](03_wiki/skills/source-answer-key-eval.md)
 - [Structured Adversarial Evidence Learning](04_synthesis/structured-adversarial-evidence-learning.md)
+- [Symbolic execution & SMT solving (glossary)](03_wiki/glossary/symbolic-execution.md)
 - [The Evidence-Learning Canon](04_synthesis/evidence-learning-canon.md)
 - [Three-Layer Zero-Trust Audit Architecture](03_wiki/patterns/three-layer-zero-trust-audit.md)
