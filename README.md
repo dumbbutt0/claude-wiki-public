@@ -1,5 +1,8 @@
 # Claude-Wiki — a self-maintaining knowledge OS (public system layer)
-<img width="900" height="650" alt="Screenshot 2026-06-29 163525" src="https://github.com/user-attachments/assets/b63dd710-28b0-4caf-88b1-6c8ac1e4aaca" />
+
+![The Cognitive Lens — the system's live graph view](assets/cognitive-lens.png)
+
+📄 **Paper:** [Horizontal Scaling in AI Systems](./PAPER.md)  ·  🔒 **Privacy model:** [PRIVACY.md](./PRIVACY.md)
 
 This is the **public system-logic layer** of a personal LLM-wiki — a persistent, self-visualizing,
 self-maintaining knowledge base maintained by [Claude Code](https://claude.com/claude-code), following
@@ -15,9 +18,11 @@ together.
 > knowledge, sources, conversations, and personal graph. See [`PRIVACY.md`](./PRIVACY.md). The phrase that
 > governs every export: **publish the method, not the work.**
 
-It's the companion to the paper on *horizontal scaling* — the idea that a compute-constrained builder gains
-capability by **composing systems** (memory, tools, graphing, privacy, governance) around a model, not by
-training a bigger one. This repo is that claim, running.
+It's the companion to the [paper on *horizontal scaling*](./PAPER.md) — the idea that a compute-constrained
+builder gains capability by **composing systems** (memory, tools, graphing, privacy, governance) around a
+model, not by training a bigger one. This repo is that claim, running.
+
+![Vertical scaling grows the model; horizontal scaling grows the system around it](assets/horizontal-scaling-diagram.png)
 
 ---
 

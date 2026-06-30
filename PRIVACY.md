@@ -29,9 +29,13 @@ pipeline whose entire job is to publish *the system, not the owner's work*. The 
 2. **Allowlist + meta filter.** `build_graph.py --scope public` emits a node only if it is
    `public_system AND mode: meta`. `tools/enforce_public_meta.py` demotes any `public_system` page that
    isn't `meta`.
-3. **Export scrub + leakage-gate.** The publish step copies an explicit **allowlist** of system files,
-   genericizes the few that reference private specifics, and then runs a **leakage-gate** that greps the
-   entire export for a denylist of private tokens and **aborts the publish** if any survive.
+3. **Leakage gate (`export_public.py`).** After allowlisting the public pages and stripping private
+   wikilinks to plain text, `export_public.py` runs a **leakage gate** that scans the whole export for
+   secrets and PII (private-key blocks, API tokens, emails, wallet addresses) **plus a configurable
+   denylist** of project-specific private identifiers (read from `tools/leakage-denylist.txt`, which is
+   itself git-ignored). On **any** match it prints the offending file/line and **aborts with a non-zero
+   exit** — so an accidental leak can't be pushed. A second local hardening pass additionally genericizes
+   domain-specific vocabulary in the exported copies before publishing.
 4. **No remote on the source.** The private vault's git repo has **no public remote** — only the clean
    export is ever pushed. Autonomous writes (daemon / cron / study / steward / chat) are **never** marked
    public; only a human, interactively, may publish.
