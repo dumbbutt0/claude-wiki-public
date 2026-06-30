@@ -1,0 +1,16 @@
+title: Claude-Wiki
+description: >-
+  A self-maintaining knowledge OS — the public system layer of a personal LLM-wiki,
+  and the companion to the paper on horizontal scaling.
+theme: jekyll-theme-midnight
+show_downloads: false
+exclude:
+  - tools
+  - "*.py"
+  - "*.sh"
+  - "*.service"
+  - "*.timer"
+  - graph-public.json
+  - graph-manifest.json
+  - LICENSE
+  - LICENSE-docs.md
