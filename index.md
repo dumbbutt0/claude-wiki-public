@@ -3,7 +3,7 @@ layout: default
 title: Claude-Wiki
 ---
 
-[📄 Read the paper](PAPER.html) &nbsp;·&nbsp; [🔒 Privacy model](PRIVACY.html) &nbsp;·&nbsp; [💻 Source on GitHub](https://github.com/<your-username>/claude-wiki-public)
+[📄 Read the paper](PAPER.html) &nbsp;·&nbsp; [🔒 Privacy model](PRIVACY.html) &nbsp;·&nbsp; [💻 Source on GitHub](https://github.com/dumbbutt0/claude-wiki-public)
 
 ![The Cognitive Lens — the system's live graph view](assets/cognitive-lens.png)
 
@@ -27,7 +27,7 @@ rather than by training a bigger one. This site is that claim, running.
 
 - **[The paper — Horizontal Scaling in AI Systems](PAPER.html)**
 - **[How the privacy model works](PRIVACY.html)**
-- **[The full system + code on GitHub](https://github.com/<your-username>/claude-wiki-public)**
+- **[The full system + code on GitHub](https://github.com/dumbbutt0/claude-wiki-public)**
 
 ---
 

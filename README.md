@@ -73,7 +73,7 @@ flowchart LR
 > it is meant to be read and adapted, not deployed turnkey.
 
 ```bash
-git clone https://github.com/<your-username>/claude-wiki-public && cd claude-wiki-public
+git clone https://github.com/dumbbutt0/claude-wiki-public && cd claude-wiki-public
 
 # 1. Build the dual-scope graph (standard library only)
 python3 07_visualizer/build_graph.py --scope both
