@@ -36,6 +36,10 @@ LOG = os.path.join(ROOT, "09_working", "lens-daemon.log")
 ROUTES = [
     {"name": "chat",  "drainer": "tools/chat_drain.py",  "cmd": "chat",  "file": ".claude/commands/chat.md",  "args": "--drain"},
     {"name": "click", "drainer": "tools/study_drain.py", "cmd": "study", "file": ".claude/commands/study.md", "args": "--drain"},
+    # live-ingestion: mine SETTLED session captures (capture_turn.py hooks → mining-queue.txt) into LOCAL pages.
+    # Heavier than chat/click, so a longer per-route cooldown; never public (autonomous writes are local_private).
+    {"name": "capture", "drainer": "tools/capture_drain.py", "cmd": "steward-captures",
+     "file": ".claude/commands/steward-captures.md", "args": "--pending --batch 3", "cooldown": 600},
 ]
 
 
@@ -182,7 +186,7 @@ def main():
     deb = 0.0 if a.once else a.debounce
     log(f"lens-daemon up · poll={a.poll}s debounce={deb}s cooldown={a.cooldown}s max/h={a.max_per_hour}"
         f"{'  [DRY-RUN]' if a.dry_run else ''}{'  [ONCE]' if a.once else ''}")
-    log("  watching: chat-inbox → /chat --drain · learning-intent-queue → /study --drain")
+    log("  watching: chat-inbox → /chat --drain · learning-intent-queue → /study --drain · session-captures → /steward-captures")
     if not (a.dry_run or a.once):
         log("  NOTE: run EITHER this daemon OR the /loop chat-loop — not both.")
 
@@ -210,7 +214,7 @@ def main():
                     continue
                 fires.append(now)
                 fire(route, a.dry_run, a.timeout, stream=not a.no_stream)
-                cooldown_until[key] = time.time() + a.cooldown
+                cooldown_until[key] = time.time() + route.get("cooldown", a.cooldown)
                 seen_since.pop(key, None)
             if a.once:
                 log("lens-daemon: --once complete")
