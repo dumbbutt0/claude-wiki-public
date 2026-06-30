@@ -1,4 +1,5 @@
 # Claude-Wiki — a self-maintaining knowledge OS (public system layer)
+<img width="900" height="650" alt="Screenshot 2026-06-29 163525" src="https://github.com/user-attachments/assets/b63dd710-28b0-4caf-88b1-6c8ac1e4aaca" />
 
 This is the **public system-logic layer** of a personal LLM-wiki — a persistent, self-visualizing,
 self-maintaining knowledge base maintained by [Claude Code](https://claude.com/claude-code), following
