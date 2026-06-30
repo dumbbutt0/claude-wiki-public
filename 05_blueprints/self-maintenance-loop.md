@@ -8,7 +8,7 @@ updated: 2026-06-28
 sources: []
 source_count: 0
 tags: [blueprint, maintenance, lint, cron]
-related: ["[[ide-for-thought-assessment]]", "long-horizon-agent-loops", "autonomy-policy", "[[durability-and-public-export]]", "[[operator-and-hermes]]"]
+related: ["[[ide-for-thought-assessment]]", "long-horizon-agent-loops", "autonomy-policy", "durability-and-public-export", "[[operator-and-hermes]]"]
 iris_ring: middle
 mode: meta
 steward: auto

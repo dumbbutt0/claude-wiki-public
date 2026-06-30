@@ -45,7 +45,7 @@ move is **not a third tool** — it is closing the distill loop and making it re
 
 ## Trigger to revisit (a deliberate gate, not drift)
 Adopt cloud Hermes **or** build the local `/execute` orchestrator only when **all** hold: (a) backlog drained to a
-healthy ratio (≪9:1); (b) ≥1 concrete *repeatable external* task exists (audit-watch monitoring, content drafting,
+healthy ratio (≪9:1); (b) ≥1 concrete *repeatable external* task exists (project-x monitoring, content drafting,
 inbox triage); (c) you accept the cloud's privacy cost **or** choose the local headless-`claude` path.
 
 ## Honest limit

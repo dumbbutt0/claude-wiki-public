@@ -29,9 +29,9 @@ capture-to-distill backlog.
 **Procedure (claim-level, privacy-scoped — see autonomy-policy):**
 1. **Read the raw body** (immutable, in `01_raw/`). Identify the *durable, reusable* ideas vs operational chatter.
 2. **Extract abstractions, not specifics.** For each durable idea write a tight, well-linked page: `concept` /
-   `capability` / `pattern` / `skill` / `synthesis`. Generalize — strip target/identity/severity specifics.
+   `capability` / `pattern` / `skill` / `synthesis`. Generalize — strip sensitive/identity specifics.
 3. **Route by privacy:** reusable methodology → `public_system` (committed); personal/self-model → `local/`
-   (`local_private`); target/exploit/finding specifics → `restricted/` (`restricted_private`); submission/severity
+   (`local_private`); private/sensitive specifics → `restricted/` (`restricted_private`); external/impact
    decisions or unverified external facts → quarantine (`09_working/requires-human-review/`).
 4. **Link generously** into existing pages (the value is the cross-references, not the page count). Add aliases.
 5. **Self-approve T0–2; quarantine T3.** Append a steward-ledger entry (provenance · tier · checks · rollback).

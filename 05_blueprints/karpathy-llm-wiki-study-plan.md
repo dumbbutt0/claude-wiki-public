@@ -8,7 +8,7 @@ updated: 2026-06-28
 sources: []
 source_count: 0
 tags: [blueprint, study-plan, meta]
-related: ["karpathy-llm-wiki", "evidence-learning-canon", "ingest-query-lint-loop", "open-ideas-not-edge", "personal-operating-system"]
+related: ["karpathy-llm-wiki", "evidence-learning-canon", "ingest-query-lint-loop", "share-method-not-work", "personal-operating-system"]
 iris_ring: outer
 mode: meta
 steward: auto
@@ -35,5 +35,5 @@ You clicked **karpathy-llm-wiki** — the source pattern this whole system imple
   deterministic index routing.
 
 ## Project seed
-Extract a public, copyable **"LLM-wiki starter"** from the `public_system` graph — the open-ideas-not-edge move (a
+Extract a public, copyable **"LLM-wiki starter"** from the `public_system` graph — the share-method-not-work move (a
 pillar of personal-operating-system).

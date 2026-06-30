@@ -8,7 +8,7 @@ updated: 2026-06-28
 sources: []
 source_count: 0
 tags: [synthesis, assessment, meta, roadmap]
-related: ["long-horizon-agent-loops", "[[durability-and-public-export]]", "[[deep-glossary]]", "[[click-to-learn]]", "recall-review-loop", "[[cognitive-zoom]]", "[[self-maintenance-loop]]", "personal-operating-system"]
+related: ["long-horizon-agent-loops", "durability-and-public-export", "deep-glossary", "[[click-to-learn]]", "recall-review-loop", "[[cognitive-zoom]]", "[[self-maintenance-loop]]", "personal-operating-system"]
 iris_ring: pupil
 mode: meta
 steward: auto
@@ -37,12 +37,12 @@ live diagnostics, refactoring, version control. The thought-analog is three axes
 ## Where it's excelling
 1. **Ingestion at scale.** 827 conversations → distilled, claim-level, privacy-scoped, **0 leaks**. The raw→wiki
    pipeline (Karpathy's core) is built and proven. Most second brains die here; this one runs.
-2. **The learning loop is real.** Click → web-researched glossary entry in ~5 min ([[click-to-learn]], [[deep-glossary]]).
+2. **The learning loop is real.** Click → web-researched glossary entry in ~5 min ([[click-to-learn]], deep-glossary).
    10 cross-field entries — and the AI-engineering ones *independently validate methods already built*
-   (reinforcement-learning-verifiable-rewards ↔ source-answer-key-eval; llm-self-verification ↔
-   structured-adversarial-evidence-learning).
+   (reinforcement-learning-verifiable-rewards ↔ evaluation-rubric-method; llm-self-verification ↔
+   adversarial-evidence-method).
 3. **Trust discipline.** Provenance on every claim, no-fabrication, leakage gates, the dual-scope edge-stays-local
-   architecture ([[durability-and-public-export]]). This is what lets it grow *safely*.
+   architecture (durability-and-public-export). This is what lets it grow *safely*.
 4. **The visual surface + thinking primitives.** The Cognition-Field Eye is a real thinking surface; the verbs exist —
    `recall`, `prime`, `query`, `explain`, `compose`.
 5. **Engineering rigor + durability.** verify 26/26, offsite backup + clean public export. It's maintained software, not

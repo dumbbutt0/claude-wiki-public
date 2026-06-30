@@ -61,4 +61,4 @@ The arc is the real subject — **a reversal worth understanding, not papering o
 ## Why this compounds
 The visualizer is the **interface to every other thing** this wiki builds. Getting the native/custom/WebGL boundary
 right — and learning to separate a decision's *invariant* from its *current implementation* — is decision hygiene that
-transfers far past the graph. It's the precision-ai-trainer habit applied to the wiki's own tooling.
+transfers far past the graph. It's the self-directed-learning habit applied to the wiki's own tooling.

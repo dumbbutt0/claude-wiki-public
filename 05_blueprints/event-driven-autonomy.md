@@ -57,7 +57,7 @@ runs `claude -p` on a timer; the daemon is the same primitive made **event-trigg
    learning-intents, **aimed** at the self-model direction (semantic alignment to the north-star); the daemon then
    `/study`s them, and as study creates questions + links those become next-round fuel → outputs become inputs.
    Bounded on every axis: **idle-fill only** (stands down if humans queued work) · per-run cap · daily budget · dedup
-   vs studied/queued/already-triggered · **never the edge** (restricted_private skipped) · Tier 0-2 only. Runs on
+   vs studied/queued/already-triggered · **never the private content** (restricted_private skipped) · Tier 0-2 only. Runs on
    `tools/lens-trigger.timer` (every 3h). **Enabling the autonomous timer is a deliberate human opt-in**
    (`systemctl --user enable --now lens-trigger.timer`) — a recurring self-spawning loop must be the owner's explicit
    choice, not the agent's. *This is the system interacting with itself.*

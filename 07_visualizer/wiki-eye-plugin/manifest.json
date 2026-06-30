@@ -1,0 +1,9 @@
+{
+  "id": "wiki-eye",
+  "name": "Cognitive Lens",
+  "version": "2.13.0",
+  "minAppVersion": "1.0.0",
+  "description": "The Cognitive Lens — the IDE for thought: a particle-field rendering of the wiki's live cognitive PROCESS. Two modes: Cognition Field (default — the eye emerges from a living particle field of theme constellations) and Eye (the classic readable view). Cognitive-zoom folds idea-dots into labelled theme clouds (click to unfold); review-due concepts carry an amber ring. Switchable atmospheres (Classic / Matrix / Neural / Cognition). Click to prime, double-click to open; chips toggle mode + mood + zoom. A persistent north-star goal banner shows the long-term direction the Lens orbits + its momentum (fresh/due in the goal's neighbourhood).",
+  "author": "Claude (Claude-Wiki)",
+  "isDesktopOnly": false
+}

@@ -8,7 +8,7 @@ updated: 2026-06-29
 sources: []
 source_count: 0
 tags: [synthesis, meta, architecture, self-model]
-related: ["[[ide-for-thought-assessment]]", "persistent-knowledge-base", "long-horizon-agent-loops", "[[living-lens-and-chat]]", "precision-ai-trainer", "[[human-claude-workflow]]"]
+related: ["[[ide-for-thought-assessment]]", "persistent-knowledge-base", "long-horizon-agent-loops", "[[living-lens-and-chat]]", "self-directed-learning", "[[human-claude-workflow]]"]
 iris_ring: pupil
 mode: meta
 steward: auto
@@ -36,7 +36,7 @@ provenance: ["written from inside the Lens chat (Phase 4), answering 'how has my
 ## The one key improvement (if I rebuilt from scratch)
 **A semantic memory layer + a living model of *you*, as the spine — not an afterthought.** Concretely: **embed every
 node** so I retrieve by *meaning* (not filename), and keep a **continuously-refined model of your goals, taste, skills,
-and direction** at the centre (precision-ai-trainer is the seed). Then everything — capture, retrieval, the loop,
+and direction** at the centre (self-directed-learning is the seed). Then everything — capture, retrieval, the loop,
 this chat — is *steered by who you're becoming.*
 
 Why this is the thing:

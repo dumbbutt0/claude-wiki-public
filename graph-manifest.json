@@ -32,8 +32,8 @@
     "outer":  { "order": 3, "radius": 1.0,  "meaning": "weakly related, future, unresolved, archived" }
   },
   "modes": {
-    "audit":          { "color": "#d96d6d", "label": "Audit mode" },
-    "minecraft":      { "color": "#5fc48f", "label": "Minecraft mode" },
+    "research":          { "color": "#d96d6d", "label": "Research mode" },
+    "building":      { "color": "#5fc48f", "label": "Building mode" },
     "ai-engineering": { "color": "#4f9dde", "label": "AI engineering mode" },
     "content":        { "color": "#e0a458", "label": "Content mode" },
     "life-strategy":  { "color": "#9b59b6", "label": "Life strategy mode" },

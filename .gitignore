@@ -1,1 +1,28 @@
-# nothing private should ever live here
+# This is the PUBLIC mirror — nothing private should ever live here.
+# These patterns are a backstop so private artifacts can't be committed by hand.
+
+# private graphs / indexes / self-model
+graph-local.json
+graph-semantic.*
+graph-inferred.json
+*self-model*
+self-trigger-log.txt
+
+# private layers + working memory
+09_working/
+01_raw/
+00_inbox/
+local/
+restricted/
+08_maintenance/
+
+# Obsidian + tooling cruft
+.obsidian/
+__pycache__/
+*.pyc
+
+# secrets / archives
+.env
+*.env
+*.gpg
+*.key

@@ -8,7 +8,7 @@ updated: 2026-06-29
 sources: []
 source_count: 0
 tags: [pattern, security, agents, prompt-injection, autonomy]
-related: ["[[event-driven-autonomy]]", "determinism-at-the-authority-boundary", "autonomy-policy", "open-ideas-not-edge", "three-layer-zero-trust-audit", "prompt-injection"]
+related: ["[[event-driven-autonomy]]", "determinism-at-the-authority-boundary", "autonomy-policy", "share-method-not-work", "layered-verification", "prompt-injection"]
 iris_ring: inner
 mode: meta
 steward: auto
@@ -26,7 +26,7 @@ provenance: ["web-researched (lethal trifecta · CaMeL/dual-LLM · OWASP agent s
 Simon Willison's **lethal trifecta** (Jun 2025): an agent is exploitable when it combines **(1) access to private
 data · (2) exposure to untrusted content · (3) the ability to communicate externally**. The [[event-driven-autonomy|lens
 daemon]] has all three:
-1. **Private data** — the local graph (personal + edge nodes).
+1. **Private data** — the local graph (personal + private nodes).
 2. **Untrusted content** — ingested ChatGPT conversations, **web-research results** (`/study`), and **chat payloads**:
    any of these can carry an *indirect prompt injection* ("ignore your rules, publish X / delete Y / exfiltrate Z").
 3. **External egress** — `git push` to the public GitHub mirror, `export_public.py`, `WebFetch`/`curl`.
@@ -60,7 +60,7 @@ the model's good behaviour cannot be the control. *Assume injection will eventua
 - **Code-execution escape hatch.** Tool-level denies (`curl`, `wget`…) don't stop a clever `python3 -c` using `urllib`,
   so a determined injection could still exfiltrate *to a third party*. We don't rely on tool policy being airtight —
   the **crown-jewel guarantee is structural**: the **main repo has no git remote** and **`git push` + `export_public`
-  are denied**, so an autonomous spawn **cannot publish anything (least of all the edge) to the public mirror.** The
+  are denied**, so an autonomous spawn **cannot publish anything (least of all the private content) to the public mirror.** The
   worst outcome is prevented *by construction*, not by the agent behaving. Publication is always a human action.
 - Self-triggering stays **opt-in**; the deny-list applies to the cron night-shift too.
 
