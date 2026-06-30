@@ -21,7 +21,7 @@ PUB = json.load(open(os.path.join(ROOT, "07_visualizer", "graph-public.json"), e
 # ---------------------------------------------------------------------------------------------------------------------
 # Leakage gate — scan the finished export for secrets/PII + a configurable denylist, and abort the publish on any hit.
 # ---------------------------------------------------------------------------------------------------------------------
-GATE_TEXT_EXT = {".md", ".json", ".txt", ".yml", ".yaml", ".csv"}
+GATE_TEXT_EXT = {".md", ".json", ".txt", ".yml", ".yaml", ".csv", ".html"}
 SECRET_PATTERNS = [
     (re.compile(r"-----BEGIN [A-Z ]*PRIVATE KEY-----"), "private key block"),
     (re.compile(r"\b(?:AKIA|ASIA)[0-9A-Z]{16}\b"), "AWS access key"),
