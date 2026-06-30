@@ -1,0 +1,129 @@
+---
+layout: default
+---
+<div class="page post">
+
+  <!-- breadcrumb -->
+  <div class="crumb-bar">
+    <span class="accent">C:\dummiesworld&gt;</span>
+    <span class="crumb"> cd </span>
+    <a class="crumb-link" href="{{ '/' | relative_url }}">~</a>
+    <span class="crumb-sep"> / </span>
+    <a class="crumb-link" href="{{ '/' | relative_url }}">file_area</a>
+    <span class="crumb-sep"> / </span>
+    <a class="crumb-link" href="{{ '/' | relative_url }}">03_posts</a>
+    <span class="crumb-sep"> / </span>
+    <span class="accent">{{ page.filename | default: page.slug | downcase }}</span>
+    <span class="crumb-right">
+      <a class="crumb-link" href="{{ '/' | relative_url }}">[index]</a>
+    </span>
+  </div>
+
+  <div class="top-rule">═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════</div>
+
+  <!-- file viewer header -->
+  <section class="file-header">
+    <pre class="file-top-bar">╔═[ {{ page.filename | default: page.slug | upcase }} ]═══════════════════════════════════════════════════════ {{ page.read_time }} · {{ page.content | size | divided_by: 1024 }}k · plain ═╗</pre>
+    <div class="file-meta">
+      <table class="meta-table">
+        <tbody>
+          <tr>
+            <td class="meta-k">FILE</td>
+            <td><span class="fname">{{ page.filename | default: page.slug | downcase }}</span> &nbsp;<span class="muted">// post · {{ page.read_time }} read</span></td>
+          </tr>
+          <tr>
+            <td class="meta-k">DATE</td>
+            <td>{{ page.date | date: "%Y.%m.%d" }}</td>
+          </tr>
+          {% if page.cats %}
+          <tr>
+            <td class="meta-k">CATEGORY</td>
+            <td>{% for c in page.cats %}<span class="cat-tag">{{ c }}</span>{% endfor %}</td>
+          </tr>
+          {% endif %}
+          {% if page.status %}
+          <tr>
+            <td class="meta-k">STATUS</td>
+            <td><span class="status-ok">● {{ page.status }}</span>{% if page.status_note %} &nbsp;<span class="muted">// {{ page.status_note }}</span>{% endif %}</td>
+          </tr>
+          {% endif %}
+          {% if page.read_time %}
+          <tr>
+            <td class="meta-k">READ</td>
+            <td>{{ page.read_time }}{% if page.words %} &nbsp;<span class="muted">// {{ page.words }} words</span>{% endif %}</td>
+          </tr>
+          {% endif %}
+        </tbody>
+      </table>
+    </div>
+
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-dek">{{ page.dek }}</p>
+
+    <div class="byline">
+      <span>BY <span class="accent">@{{ site.author | upcase }}</span></span>
+      <span class="dot">·</span>
+      <span>{{ page.read_time | upcase }} READ</span>
+      <span class="dot">·</span>
+      <span>{{ page.date | date: "%Y.%m.%d" }}</span>
+      <span class="byline-right">
+        <a class="action-btn" href="javascript:void(0)" onclick="navigator.clipboard.writeText('{{ page.url | absolute_url }}');this.textContent='[ copied ]';">[ copy link ]</a>
+        {% if page.raw %}<a class="action-btn" href="{{ page.raw | relative_url }}">[ raw .md ]</a>{% endif %}
+        {% if page.source %}<a class="action-btn" href="{{ page.source }}">[ source ]</a>{% endif %}
+      </span>
+    </div>
+  </section>
+
+  <div class="mid-rule">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</div>
+
+  <!-- body -->
+  <section class="body-grid">
+    <article class="article prose">
+      {{ content }}
+
+      <div class="end-of-file">
+        <pre class="eof-rule">──────────────────────────────────── -- end of file ────────────────────────────────────</pre>
+        <div class="eof-meta">
+          <span class="accent">OK.</span> &nbsp; <span class="muted">{{ page.content | size | divided_by: 1024 }}k · {{ page.read_time }} read</span>
+        </div>
+      </div>
+    </article>
+
+    <aside class="aside">
+      {% if page.tldr %}
+      <div class="aside-box">
+        <pre class="aside-top">┌─[ tl;dr ]──────────────────────────────┐</pre>
+        <div class="aside-body">
+          <ul class="tldr-list">
+            {% for x in page.tldr %}<li>{{ x }}</li>{% endfor %}
+          </ul>
+        </div>
+        <pre class="aside-bot">└──────────────────────────────────────────┘</pre>
+      </div>
+      {% endif %}
+      {% if page.links %}
+      <div class="aside-box">
+        <pre class="aside-top">┌─[ links ]──────────────────────────────┐</pre>
+        <div class="aside-body">
+          <ul class="tool-list">
+            {% for l in page.links %}<li><span class="accent">·</span> <a class="link" href="{{ l.url }}">{{ l.label }}</a></li>{% endfor %}
+          </ul>
+        </div>
+        <pre class="aside-bot">└──────────────────────────────────────────┘</pre>
+      </div>
+      {% endif %}
+    </aside>
+  </section>
+
+  <div class="mid-rule">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</div>
+
+  <!-- comments -->
+  <section class="comments">
+    <div class="comments-head">
+      <span><span class="accent">§ </span> COMMENTS <span class="muted">// messages on the wire</span></span>
+    </div>
+    {% include giscus.html %}
+  </section>
+
+{% include footer.html %}
+</div>

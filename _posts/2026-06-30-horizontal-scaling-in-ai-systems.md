@@ -1,4 +1,26 @@
-# Horizontal Scaling in AI Systems: Modular Composition Beyond Parameter Growth
+---
+layout: post
+title: "Horizontal Scaling in AI Systems"
+date: 2026-06-30
+filename: HORIZ.TXT
+dek: "Modular composition beyond parameter growth — a compute-constrained path to more capable AI."
+cats: [SYSTEMS, SCALING, AI]
+status: PUBLISHED
+status_note: "companion to the system in this repo"
+read_time: "16 min"
+flag: "[NEW]"
+raw: /PAPER.md
+source: https://github.com/dumbbutt0/claude-wiki-public/blob/main/PAPER.md
+tldr:
+  - "Vertical scaling grows the model; horizontal scaling grows the system around it."
+  - "Compose memory, tools, agents, evaluators, and governance — the model becomes the coordinator, not the whole brain."
+  - "You can improve the system without retraining: refresh the index, add a tool, upgrade the verifier."
+  - "The scaling-law frontier belongs to big labs; the composition frontier is wide open."
+links:
+  - { label: "the paper (raw .md)", url: "/PAPER.md" }
+  - { label: "the system on GitHub", url: "https://github.com/dumbbutt0/claude-wiki-public" }
+  - { label: "privacy model", url: "/PRIVACY.md" }
+---
 
 ## Abstract
 
@@ -12,7 +34,7 @@ Vertical scaling has produced impressive results, but it also creates a major ba
 
 One answer is horizontal scaling. In this paper, horizontal scaling refers to the practice of increasing AI system capability by distributing intelligence across multiple modules. Instead of forcing one model to memorize everything, an agent may retrieve information from a knowledge base, call tools, interact with code, query databases and much more.
 
-This reframes progress in AI. Capability does not only come from making a model larger. It can also come from designing better systems around a model. For compute-constrained builders, this matters because it creates a realistic path to useful AI research and development without training a frontier model from scratch. Horizontal scaling turns the problem from “How do I build a bigger brain?” into “How do I connect smaller abilities into a stronger system?”
+This reframes progress in AI. Capability does not only come from making a model larger. It can also come from designing better systems around a model. For compute-constrained builders, this matters because it creates a realistic path to useful AI research and development without training a frontier model from scratch. Horizontal scaling turns the problem from "How do I build a bigger brain?" into "How do I connect smaller abilities into a stronger system?"
 
 This is the core claim of the paper: horizontal scaling gives low-resource builders a way to increase AI capability through architecture, orchestration, memory, and verification instead of only through model size. It does not argue that bigger models are useless. It argues that useful intelligence can also be built by connecting smaller abilities together.
 
@@ -30,7 +52,7 @@ Another example is tool use. A model may be weak at exact arithmetic, current in
 
 The distinction can be summarized as follows: vertical scaling increases the power of the model; horizontal scaling increases the power of the system.
 
-## Figure 1. Conceptual difference between vertical and horizontal scaling
+### Figure 1. Conceptual difference between vertical and horizontal scaling
 
 ```text
 Vertical Scaling
@@ -54,7 +76,7 @@ Memory   Tools   Agents   Evaluators   Governance
         One stronger system
 ```
 
-**Figure 1. Conceptual difference between vertical and horizontal scaling.** Vertical scaling concentrates capability inside the model itself. Horizontal scaling distributes capability across memory, tools, agents, evaluators, and governance layers.
+**Figure 1.** Vertical scaling concentrates capability inside the model itself. Horizontal scaling distributes capability across memory, tools, agents, evaluators, and governance layers.
 
 ## 3. A Taxonomy of Horizontal Scaling
 
@@ -112,21 +134,21 @@ In cost terms, vertical scaling tends to move cost into training and serving lar
 
 In transparency terms, horizontal systems have an advantage. Retrieval citations, tool logs, agent traces, and validation results can be inspected. This does not make the system automatically safe or correct, but it provides more places for debugging and governance.
 
-In privacy terms, horizontal scaling can also be stronger. A user can keep a local knowledge base, private graph, or restricted memory store while using a general model as an interface. This allows personal context to remain outside the model provider’s training process.
+In privacy terms, horizontal scaling can also be stronger. A user can keep a local knowledge base, private graph, or restricted memory store while using a general model as an interface. This allows personal context to remain outside the model provider's training process.
 
 The important point is that horizontal scaling does not need to beat vertical scaling at everything to matter. It only needs to create another path. For people without frontier compute, that path may be the difference between only consuming AI and actually building useful AI systems.
 
-## Table 1. Vertical versus horizontal scaling
+### Table 1. Vertical versus horizontal scaling
 
-| Attribute                  | Vertical Scaling                                            | Horizontal Scaling                                                               |
-| -------------------------- | ----------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| Core method                | Increase model size, training data, and compute             | Compose models with memory, tools, agents, evaluators, and governance            |
-| Main bottleneck            | Hardware, data, and training budget                         | Engineering, orchestration, and evaluation                                       |
-| Update path                | Retrain, fine-tune, increase context, or use a larger model | Update the knowledge base, add tools, improve agents, replace modules            |
-| Transparency               | Often low because the model is a single black box           | Higher because retrieval, tool calls, logs, and validation can be inspected      |
-| Personalization            | Hard unless fine-tuned or given long context                | Easier through local memory, personal graphs, and private stores                 |
-| Failure mode               | One model gives a wrong answer for unclear reasons          | A component fails, retrieves bad data, misroutes context, or breaks coordination |
-| Low-resource accessibility | Low for frontier training                                   | Higher because builders can scale through system design                          |
+| Attribute | Vertical Scaling | Horizontal Scaling |
+| --- | --- | --- |
+| Core method | Increase model size, training data, and compute | Compose models with memory, tools, agents, evaluators, and governance |
+| Main bottleneck | Hardware, data, and training budget | Engineering, orchestration, and evaluation |
+| Update path | Retrain, fine-tune, increase context, or use a larger model | Update the knowledge base, add tools, improve agents, replace modules |
+| Transparency | Often low because the model is a single black box | Higher because retrieval, tool calls, logs, and validation can be inspected |
+| Personalization | Hard unless fine-tuned or given long context | Easier through local memory, personal graphs, and private stores |
+| Failure mode | One model gives a wrong answer for unclear reasons | A component fails, retrieves bad data, misroutes context, or breaks coordination |
+| Low-resource accessibility | Low for frontier training | Higher because builders can scale through system design |
 
 ## 5. Risks and Limitations
 
@@ -150,15 +172,15 @@ These risks do not weaken the core claim. They define the engineering challenge.
 
 ## 6. Case Study: A Personalized Knowledge Graph as Horizontal Scaling
 
-One practical example of horizontal scaling is a personal AI knowledge system. In this architecture, a language model is connected to a user’s local knowledge base, conversation archive, project notes, source documents, and visual graph. The model does not need to remember everything internally. Instead, it reads, writes, retrieves, summarizes, links, and updates external memory.
+One practical example of horizontal scaling is a personal AI knowledge system. In this architecture, a language model is connected to a user's local knowledge base, conversation archive, project notes, source documents, and visual graph. The model does not need to remember everything internally. Instead, it reads, writes, retrieves, summarizes, links, and updates external memory.
 
 Such a system may include several modules. A raw capture layer stores conversations, documents, and notes. A mining layer extracts concepts, skills, goals, questions, decisions, and patterns. A privacy layer separates public system concepts from local private memory and restricted notes. A graph builder turns these nodes into a knowledge graph. A visualizer displays the graph as a cognitive map. A stewarding layer updates the graph over time.
 
-![Figure 2. Cognitive Lens visualization of a personalized horizontal-scaling knowledge system.](assets/cognitive-lens.png)
+![Figure 2. Cognitive Lens visualization of a personalized horizontal-scaling knowledge system.](/assets/cognitive-lens.png)
 
-**Figure 2. Cognitive Lens visualization of a personalized horizontal-scaling knowledge system.** The visual graph represents a local cognitive map made from accumulated conversations, projects, skills, goals, gaps, and learning signals. This figure shows horizontal scaling applied to personal learning: instead of relying on a model to remember everything internally, the system externalizes memory into a graph that can be inspected, expanded, and used for future reasoning.
+**Figure 2.** The visual graph represents a local cognitive map made from accumulated conversations, projects, skills, goals, gaps, and learning signals. This figure shows horizontal scaling applied to personal learning: instead of relying on a model to remember everything internally, the system externalizes memory into a graph that can be inspected, expanded, and used for future reasoning.
 
-## Figure 3. Personalized horizontal-scaling pipeline
+### Figure 3. Personalized horizontal-scaling pipeline
 
 ```text
 Conversations, notes, documents, projects
@@ -176,9 +198,9 @@ Cognitive Lens visualization
 Learning frontier and next actions
 ```
 
-**Figure 3. Personalized horizontal-scaling pipeline.** The system distributes cognition across capture, extraction, classification, graph construction, visualization, and planning. Each layer performs a specialized role so that the model does not need to hold every memory, decision, or learning path internally.
+**Figure 3.** The system distributes cognition across capture, extraction, classification, graph construction, visualization, and planning. Each layer performs a specialized role so that the model does not need to hold every memory, decision, or learning path internally.
 
-This is horizontal scaling applied to learning. The user’s intelligence is extended not by training a new frontier model, but by building a modular system that remembers, organizes, evaluates, and visualizes knowledge. The system becomes more useful as it accumulates structured context.
+This is horizontal scaling applied to learning. The user's intelligence is extended not by training a new frontier model, but by building a modular system that remembers, organizes, evaluates, and visualizes knowledge. The system becomes more useful as it accumulates structured context.
 
 This case also shows why governance matters. A personal graph may contain public concepts, private notes, sensitive memories, and restricted strategy. A safe system must distinguish between local graph use and public export. It should be able to graph everything locally while sharing only generalized architecture, logic, and concepts.
 

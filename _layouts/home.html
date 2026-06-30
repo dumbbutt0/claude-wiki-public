@@ -1,0 +1,198 @@
+---
+layout: default
+---
+<div class="page">
+
+  <div class="border-line">═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════</div>
+
+  <!-- banner / about -->
+  <header class="banner">
+    <pre class="mega-ascii">▓█████▄  █    ██  ███▄ ▄███▓ ███▄ ▄███▓ ██▓▓█████   ██████       █     █░  ▒█████   ██▀███   ██▓      ▓█████▄
+▒██▀ ██▌ ██  ▓██▒▓██▒▀█▀ ██▒▓██▒▀█▀ ██▒▓██▒▓█   ▀ ▒██    ▒      ▓█░ █ ░█░ ▒██▒  ██▒▓██ ▒ ██▒▓██▒      ▒██▀ ██▌
+░██   █▌▓██  ▒██░▓██ ▒▒ ▓██░▓██ ▒▒ ▓██░▒██▒▒███   ░ ▓██▄        ▒█░ █ ░█  ▒██░  ██▒▓██ ░▄█ ▒▒██░      ░██   █▌
+░▓█▄   ▌▓▓█  ░██░▒██    ▒██ ▒██    ▒██ ░██░▒▓█  ▄   ▒   ██▒     ░█░ █ ░█  ▒██   ██░▒██▀▀█▄  ▒██░      ░▓█▄  ▄▌
+░▒█████▓ ▒▒█████▓ ▒██▒   ░██▒▒██▒   ░██▒░██░░▒████▒▒██████▒▒     ░░██▒██▓  ░ ████▓▒░░██▓ ▒██▒░████████▒░▒█████▓
+ ▒▒▓▒▒▒ ░▒▓▒ ▒ ▒ ░ ▒░   ░  ░░ ▒░   ░  ░░▓  ░░ ▒░ ░▒ ▒▓▒ ▒ ░     ░ ▓░▒ ▒   ░ ▒░▒░▒░ ░ ▒▓ ░▒▓░░▒▒▒▒▒▒░  ▒▒▓▒▒▒</pre>
+
+    <p class="tagline">
+      <span class="accent">«</span> {{ site.tagline }} <span class="accent">»</span>
+    </p>
+
+    <div class="banner-grid">
+      <div class="about">
+        <div class="about-prompt"><span class="accent">C:\dummiesworld&gt;</span> cat ./about.txt</div>
+        <div class="about-kicker">── // about me ───────────────────────────────────────────────────────</div>
+        <p class="about-para">
+          <span class="dropcap">I</span>'m a compute-constrained builder figuring out how far you can push AI
+          without a frontier-model budget. The work is about systems, not size: wiring a model into memory,
+          tools, agents, knowledge graphs, and governance so a small setup punches above its weight.
+        </p>
+        <p class="about-para">
+          I'm especially interested in <span class="hi">retrieval &amp; memory</span>,
+          <span class="hi"> local-first knowledge graphs</span>, <span class="hi">agent loops</span>,
+          <span class="hi"> evaluation</span>, and the <span class="hi">privacy boundary</span> between what a
+          system graphs locally and what it ever shares. I build the tooling around all of it — a
+          self-maintaining wiki, a live graph "lens", and an event-driven autonomy loop.
+        </p>
+        <p class="about-para">
+          This blog is the logbook: notes on building AI systems on a budget, the architecture decisions
+          behind them, and what actually works when the model stays the same but the system gets smarter.
+        </p>
+        <div class="about-tags">
+          <span class="tag-label">tags:</span>
+          <span class="about-tag">#llm</span>
+          <span class="about-tag">#rag</span>
+          <span class="about-tag">#agents</span>
+          <span class="about-tag">#knowledge-graphs</span>
+          <span class="about-tag">#horizontal-scaling</span>
+          <span class="about-tag">#memory</span>
+          <span class="about-tag">#obsidian</span>
+          <span class="about-tag">#claude-code</span>
+          <span class="about-tag">#local-first</span>
+          <span class="about-tag">#systems</span>
+        </div>
+      </div>
+
+      <div class="portrait-wrap">
+        <pre class="portrait-border">┌─[ SYSOP.JPG ]─────────────┐</pre>
+        <div class="portrait-frame">
+          <img src="{{ '/assets/sysop.png' | relative_url }}" alt="sysop" class="portrait-img" />
+        </div>
+        <pre class="portrait-border">└─ 400×400 · 384k · YV12 ───┘</pre>
+        <div class="portrait-caption">
+          <span class="accent">$</span> file --brief sysop.png<br />
+          <span class="muted">// the management, smiling, in a building on fire.</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="border-line">═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════</div>
+
+  <!-- sysop block -->
+  <section class="sysop">
+    <div class="sysop-left">
+      <div class="sysop-card">
+        <div class="sysop-card-head">░░ SYSOP ONLINE ░░</div>
+        <pre class="sysop-card-body">@dumbbutt0 · v0.1.0
+uptime  001d 04:12
+load    0.42  0.51
+posts   {{ site.posts | size }}
+tty     /dev/dummy0</pre>
+        <div class="sysop-card-foot">PRESS ANY KEY...</div>
+      </div>
+    </div>
+
+    <div class="sysop-right">
+      <table class="kv">
+        <tbody>
+          <tr><td class="k">HANDLE</td><td>dumbbutt0</td></tr>
+          <tr><td class="k">LOC.</td><td>somewhere with terrible wifi</td></tr>
+          <tr><td class="k">BEAT</td><td>building AI systems on a budget · knowledge graphs · agents</td></tr>
+          <tr><td class="k">STATUS</td><td><span class="online">● ONLINE</span> &nbsp;<span class="muted">(idle 04:11)</span></td></tr>
+          <tr><td class="k">VISITORS</td><td>00000,042</td></tr>
+          <tr><td class="k">BANNER</td><td>
+            <a href="{{ '/' | relative_url }}" class="link">[ENTER]</a> &nbsp;
+            <a href="{{ '/guestbook.html' | relative_url }}" class="link">[GUESTBOOK]</a> &nbsp;
+            <a href="{{ '/feed.xml' | relative_url }}" class="link">[RSS]</a> &nbsp;
+            <a href="{{ site.repo_url }}" class="link">[SOURCE]</a>
+          </td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="marquee-wrap">
+      <span class="marquee-text">&gt;&gt;&gt; NOW BUILDING: a self-maintaining wiki &nbsp;·&nbsp; NOW READING: compound AI systems &nbsp;·&nbsp; STACK: claude code + obsidian + python &nbsp;·&nbsp; COFFEE: burnt &nbsp;·&nbsp; THANK YOU FOR DIALING IN &nbsp;&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt; NOW BUILDING: a self-maintaining wiki &nbsp;·&nbsp; NOW READING: compound AI systems &nbsp;·&nbsp; STACK: claude code + obsidian + python &nbsp;·&nbsp; COFFEE: burnt &nbsp;·&nbsp; THANK YOU FOR DIALING IN &nbsp;&gt;&gt;&gt;</span>
+    </div>
+  </section>
+
+  <!-- file area -->
+  <div class="area-bar">
+    <span>[F]ILE AREA :: {{ site.posts | size }} / POSTS</span>
+    <span class="muted">PRESS ENTER TO READ A FILE</span>
+  </div>
+
+  <div class="file-head">
+    <span class="col-num">NUM.</span>
+    <span class="col-date">DATE</span>
+    <span class="col-size">SIZE</span>
+    <span class="col-dl">D/L</span>
+    <span class="col-name">FILENAME &nbsp; DESCRIPTION</span>
+  </div>
+
+  {% for post in site.posts %}
+  <a href="{{ post.url | relative_url }}" class="file-row">
+    <span class="col-num muted">[{{ forloop.index | prepend: '000' | slice: -3, 3 }}]</span>
+    <span class="col-date muted">{{ post.date | date: "%Y.%m.%d" }}</span>
+    <span class="col-size muted">{{ post.content | size | divided_by: 1024 | append: 'K' }}</span>
+    <span class="col-dl accent">★★★★★</span>
+    <span class="col-name">
+      <span class="fname">{{ post.filename | default: post.title | upcase }}</span>
+      <span class="muted"> &nbsp;— </span>
+      <span class="serif">{{ post.dek | default: post.description }}</span>
+      {% if post.flag %}<span class="flag">&nbsp;{{ post.flag }}</span>{% endif %}
+    </span>
+  </a>
+  {% endfor %}
+
+  <div class="area-bar">
+    <span>[N]ext page &nbsp;·&nbsp; [P]rev page &nbsp;·&nbsp; [S]earch &nbsp;·&nbsp; [T]ag filter &nbsp;·&nbsp; [Q]uit</span>
+    <span class="muted">{{ site.posts | size }} / {{ site.posts | size }} files shown</span>
+  </div>
+
+  <!-- bottom panels -->
+  <section class="bottom" id="guestbook">
+    <div class="bottom-col">
+      <div class="bottom-head">::: WEB RING :::</div>
+      <ul class="link-list">
+        <li>&gt; <a class="link" href="https://simonwillison.net">simonwillison.net</a> — llm + tools, daily</li>
+        <li>&gt; <a class="link" href="https://karpathy.bearblog.dev">karpathy</a> — the llm-wiki idea</li>
+        <li>&gt; <a class="link" href="https://bair.berkeley.edu/blog/2024/02/18/compound-ai-systems/">bair.berkeley</a> — compound ai systems</li>
+        <li>&gt; <a class="link" href="https://obsidian.md">obsidian.md</a> — the local vault</li>
+        <li>&gt; <a class="link" href="{{ site.repo_url }}">the-source</a> — the system behind this blog</li>
+      </ul>
+    </div>
+    <div class="bottom-col">
+      <div class="bottom-head">::: BULLETINS :::</div>
+      {% assign latest = site.posts.first %}
+      {% if latest %}
+      <div class="bulletin-card">
+        <div class="bulletin-card-head">░░ NEW :: {{ latest.date | date: "%Y.%m.%d" }} ░░</div>
+        <div class="bulletin-card-body">
+          <p>{{ latest.dek | default: latest.description }}</p>
+          <a class="link" href="{{ latest.url | relative_url }}">→ {{ latest.url }}</a>
+        </div>
+      </div>
+      {% endif %}
+    </div>
+    <div class="bottom-col">
+      <div class="bottom-head">::: GUESTBOOK :::</div>
+      <div class="gb">
+        <div class="gb-msg"><span class="serif">drop a line in the public guestbook — say hi, leave a tip, or just prove you dialed in. comments live on GitHub Discussions.</span></div>
+        <a class="link" style="display:inline-block;margin-top:12px" href="{{ '/guestbook.html' | relative_url }}">[ SIGN THE GUESTBOOK → ]</a>
+      </div>
+    </div>
+  </section>
+
+{% include footer.html %}
+</div>
+
+<script>
+  (function () {
+    var img = document.querySelector('.portrait-img');
+    if (!img) return;
+    var frame = img.closest('.portrait-frame');
+    var MAX = 8;
+    frame.addEventListener('mousemove', function (e) {
+      var r = frame.getBoundingClientRect();
+      var px = (e.clientX - r.left) / r.width  - 0.5;
+      var py = (e.clientY - r.top)  / r.height - 0.5;
+      img.style.transition = 'transform 0.05s linear';
+      img.style.transform = 'rotateY(' + (px * MAX) + 'deg) rotateX(' + (-py * MAX) + 'deg) scale(1.03)';
+    });
+    frame.addEventListener('mouseleave', function () {
+      img.style.transition = 'transform 0.35s ease';
+      img.style.transform = 'rotateY(0deg) rotateX(0deg) scale(1)';
+    });
+  })();
+</script>
